@@ -1,0 +1,1375 @@
+(venv) [kisski-neptune] u26834@glogin9 remaped-uniprot-embl $ python jsonToEmbl.py
+  0%|                                                                                                                           | 0/235967 [00:00<?, ?it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['GAY36765']
+  1%|█▏                                                                                                            | 2563/235967 [01:50<2:17:38, 28.26it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CAQ13607']
+  1%|█▋                                                                                                            | 3501/235967 [02:10<2:06:51, 30.54it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['CAM19707', 'CAM14259']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+  2%|██                                                                                                            | 4386/235967 [02:50<2:13:20, 28.94it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CAM46900']
+  2%|██▍                                                                                                           | 5308/235967 [03:30<2:25:29, 26.42it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CAX12082']
+  3%|███▋                                                                                                          | 7988/235967 [05:20<2:41:49, 23.48it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CAN87888']
+  4%|████▏                                                                                                         | 8903/235967 [06:00<2:37:34, 24.02it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['CAN88580', 'CAN88080']
+  4%|████▌                                                                                                         | 9850/235967 [06:30<2:25:28, 25.91it/s]
+Requested 1000 files, but only got 997 files.                                                  Probably Broken Link for ['ABR83732', 'ABR86249', 'ABR85489'
+]
+  5%|████▉                                                                                                        | 10797/235967 [07:10<2:24:35, 25.95it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['EAU01037']
+  5%|█████▍                                                                                                       | 11734/235967 [07:40<2:21:33, 26.40it/s]
+Requested 1000 files, but only got 995 files.                                                  Probably Broken Link for ['EAT97839', 'ABV62781', 'ABV62729'
+, 'ABV62306', 'ABV62286']
+  5%|█████▊                                                                                                       | 12673/235967 [08:10<2:09:37, 28.71it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['EES14631']
+  6%|██████▋                                                                                                      | 14452/235967 [09:00<2:02:54, 30.04it/s]
+Requested 1000 files, but only got 995 files.                                                  Probably Broken Link for ['ERP57494', 'EEE95386', 'ERP59194'
+, 'EEE99264', 'AAI57714']
+  7%|███████                                                                                                      | 15393/235967 [09:30<1:58:09, 31.11it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CAP52076']
+  7%|███████▌                                                                                                     | 16323/235967 [10:00<1:58:24, 30.92it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CAQ13978']
+  9%|█████████▋                                                                                                   | 21018/235967 [12:10<1:45:20, 34.01it/s]
+Requested 1000 files, but only got 994 files.                                                  Probably Broken Link for ['EDW62294', 'EDW62815', 'EDW06051'
+, 'EDW86328', 'AEA99588', 'AEA97183']
+  9%|██████████▏                                                                                                  | 21968/235967 [12:40<1:40:51, 35.36it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['EDY71541', 'EDY73530']
+ 10%|███████████                                                                                                  | 23837/235967 [13:30<1:41:32, 34.82it/s]
+Requested 1000 files, but only got 933 files.                                                  Probably Broken Link for ['ACJ57431', 'ACJ57507', 'ACJ58289'
+, 'ACJ56212', 'ACJ58965', 'ACJ40548', 'ACJ56883', 'ACJ59159', 'ACJ56815', 'ACJ58165', 'ACJ59040', 'ACJ56360', 'ACJ56065', 'ACJ59064', 'ACJ56270', 'ACJ57241
+', 'ACJ58319', 'ACJ56291', 'ACJ56671', 'ACJ58549', 'ACJ56798', 'ACJ57648', 'ACJ59166', 'ACJ58352', 'ACJ57617', 'ACJ57384', 'ACJ58210', 'ACJ59431', 'ACJ5800
+5', 'ACJ58505', 'ACJ57750', 'ACJ56961', 'ACJ57997', 'ACJ58641', 'ACJ58797', 'ACJ56434', 'ACJ57769', 'ACJ58341', 'ACJ57326', 'ACJ40102', 'ACJ57536', 'ACJ587
+72', 'ACJ57069', 'ACJ57562', 'ACJ58119', 'ACJ56503', 'ACJ56713', 'ACJ59411', 'ACJ59094', 'ACJ56494', 'ACJ57826', 'ACJ59385', 'ACJ56558', 'ACJ57959', 'ACJ58
+614', 'ACJ59229', 'ACJ59265', 'ACJ57309', 'ACJ56868', 'ACJ57426', 'ACJ56986', 'ACJ57525', 'ACJ59297', 'ACJ59132', 'ACJ58022', 'ACJ57841']
+ 11%|███████████▊                                                                                                 | 25694/235967 [14:30<1:47:01, 32.74it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CAX14731']
+ 11%|████████████▎                                                                                                | 26642/235967 [15:00<1:45:04, 33.20it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CAX14472']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 12%|████████████▋                                                                                                | 27558/235967 [15:30<1:46:28, 32.62it/s]
+Requested 1000 files, but only got 990 files.                                                  Probably Broken Link for ['ACM64724', 'ACM64838', 'ACM64665'
+, 'ERP54763', 'ACM64445', 'ACM64813', 'ACM64714', 'ACM64674', 'ACM64745', 'ACM64652']
+ 13%|██████████████                                                                                               | 30389/235967 [16:40<1:30:19, 37.93it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['EES05392', 'EER94214']
+ 13%|██████████████▍                                                                                              | 31276/235967 [17:10<1:43:11, 33.06it/s]
+Requested 1000 files, but only got 994 files.                                                  Probably Broken Link for ['CAM56489', 'CAK04045', 'CAK04976'
+, 'CAK05184', 'CAK11365', 'CAK11321']
+ 14%|██████████████▋                                                                                              | 31905/235967 [17:50<2:11:16, 25.91it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['AFW80762']
+ 14%|███████████████▍                                                                                             | 33455/235967 [19:30<2:46:50, 20.23it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CAA16378']
+ 14%|███████████████▋                                                                                             | 33907/235967 [20:10<3:09:43, 17.75it/s]
+Requested 1000 files, but only got 996 files.                                                  Probably Broken Link for ['CAI16842', 'CAH73736', 'CAI39759'
+, 'CAI39758']
+ 15%|████████████████                                                                                             | 34763/235967 [21:20<3:42:33, 15.07it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CAI17120']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other DNA'
+ 15%|████████████████▏                                                                                            | 35016/235967 [21:29<4:11:48, 13.30it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+ 15%|████████████████▎                                                                                            | 35220/235967 [21:57<4:47:28, 11.64it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other DNA'
+ 15%|████████████████▍                                                                                            | 35451/235967 [22:22<5:03:14, 11.02it/s]
+Requested 1000 files, but only got 992 files.                                                  Probably Broken Link for ['SIT99111', 'CAA31648', 'SIT99143'
+, 'SIT99025', 'SIT98576', 'SIT99169', 'SIT98556', 'SIT98956']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 15%|████████████████▌                                                                                            | 35844/235967 [22:52<4:44:42, 11.72it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 15%|████████████████▌                                                                                            | 35844/235967 [23:10<4:44:42, 11.72it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 15%|████████████████▋                                                                                            | 36201/235967 [23:30<4:17:30, 12.93it/s]
+Requested 1000 files, but only got 997 files.                                                  Probably Broken Link for ['AAW41652', 'AAW41653', 'AAK34828'
+]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 16%|████████████████▉                                                                                            | 36677/235967 [24:00<4:11:52, 13.19it/s]
+Requested 1000 files, but only got 997 files.                                                  Probably Broken Link for ['BBE36490', 'UIE54577', 'AAL20055'
+]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 16%|█████████████████                                                                                            | 36961/235967 [24:22<4:47:00, 11.56it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['CAA31649', 'AAS65198']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 16%|█████████████████▏                                                                                           | 37257/235967 [25:10<4:52:48, 11.31it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['EAL28908']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 16%|█████████████████▎                                                                                           | 37524/235967 [25:30<4:57:13, 11.13it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 16%|█████████████████▍                                                                                           | 37818/235967 [26:00<5:04:55, 10.83it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['EAL27642']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 16%|█████████████████▌                                                                                           | 38149/235967 [26:30<5:03:41, 10.86it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['AAP04432']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 16%|█████████████████▊                                                                                           | 38516/235967 [27:00<4:51:57, 11.27it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 16%|█████████████████▉                                                                                           | 38863/235967 [27:30<4:55:44, 11.11it/s]
+Requested 1000 files, but only got 995 files.                                                  Probably Broken Link for ['CCD62551', 'AAK74113', 'CCD62552'
+, 'CCD62631', 'AAA52498']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 17%|██████████████████                                                                                           | 39214/235967 [28:00<4:46:21, 11.45it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['CAM23695', 'CAM23696']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 17%|██████████████████▎                                                                                          | 39568/235967 [28:30<4:37:22, 11.80it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['AAB00531']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 17%|██████████████████▌                                                                                          | 40050/235967 [29:00<4:11:52, 12.96it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CDY02019']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 17%|██████████████████▋                                                                                          | 40434/235967 [29:25<4:39:29, 11.66it/s]
+Requested 1000 files, but only got 997 files.                                                  Probably Broken Link for ['AAA49971', 'AAC42231', 'AAA82941'
+]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 17%|██████████████████▊                                                                                          | 40842/235967 [30:20<4:40:53, 11.58it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['EAL31079']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+ 17%|███████████████████                                                                                          | 41235/235967 [30:50<4:51:22, 11.14it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CAX13993']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 18%|███████████████████▎                                                                                         | 41893/235967 [31:30<4:02:44, 13.32it/s]
+Requested 1000 files, but only got 984 files.                                                  Probably Broken Link for ['SIT98833', 'SIT99010', 'SIT99061'
+, 'SIT98692', 'SIT98893', 'SIT99144', 'SIT99175', 'SIT99087', 'SIT99118', 'SIT99066', 'SIT98648', 'SIT99117', 'SIT99000', 'SIT99091', 'SIT98503']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 18%|███████████████████▋                                                                                         | 42579/235967 [32:00<3:22:21, 15.93it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['AAB39651', 'CAI21240']
+ 18%|███████████████████▉                                                                                         | 43167/235967 [32:30<3:16:09, 16.38it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['KUL85185']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 19%|████████████████████▏                                                                                        | 43768/235967 [33:20<3:23:39, 15.73it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 19%|████████████████████▍                                                                                        | 44308/235967 [34:00<3:33:02, 14.99it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 19%|████████████████████▊                                                                                        | 45048/235967 [34:20<2:58:57, 17.78it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['BAF09769']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 19%|█████████████████████                                                                                        | 45588/235967 [35:10<3:20:10, 15.85it/s]
+Requested 1000 files, but only got 988 files.                                                  Probably Broken Link for ['ABI61894', 'ABI61189', 'EAZ34561'
+, 'ABI61906', 'EAZ32788', 'ABI61325', 'BAF09829', 'ABI61727', 'ABI61124', 'ABI61038', 'ABI62149', 'BAF18795']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+ 20%|█████████████████████▍                                                                                       | 46396/235967 [35:50<3:06:46, 16.92it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['BAF28924', 'CAM16402']
+ 20%|██████████████████████                                                                                       | 47822/235967 [37:20<3:12:43, 16.27it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 21%|██████████████████████▎                                                                                      | 48411/235967 [37:50<3:06:43, 16.74it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CCD69663']
+ 21%|███████████████████████                                                                                      | 49916/235967 [39:00<2:40:06, 19.37it/s]
+Requested 1000 files, but only got 993 files.                                                  Probably Broken Link for ['CAK04341', 'CAK10741', 'CAK10868'
+, 'CAK03687', 'CAK04995', 'CAK05066', 'CAK11317']
+ 22%|███████████████████████▍                                                                                     | 50810/235967 [39:40<2:35:34, 19.84it/s]
+Requested 1000 files, but only got 983 files.                                                  Probably Broken Link for ['AAZ66456', 'EDY69183', 'EAL28250'
+, 'AAZ66451', 'AAZ66453', 'AAZ66457', 'EAL25220', 'EAL25138', 'AAZ66455', 'EAL26233', 'CAA98076', 'EAL27136', 'EAL28133', 'AAZ66450', 'EAL29045', 'EAL27989
+', 'EAL28100']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 23%|████████████████████████▋                                                                                    | 53326/235967 [41:30<2:14:05, 22.70it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['AAZ08174']
+ 24%|█████████████████████████▊                                                                                   | 55867/235967 [43:30<2:20:14, 21.40it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['AAH13054', 'AAH25474']
+ 24%|██████████████████████████▏                                                                                  | 56577/235967 [44:00<2:23:02, 20.90it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 24%|██████████████████████████▍                                                                                  | 57232/235967 [44:50<2:44:23, 18.12it/s]
+Requested 1000 files, but only got 990 files.                                                  Probably Broken Link for ['AAX71944', 'AAX71979', 'AAX72301'
+, 'AAX71803', 'AAX71735', 'AAX71781', 'AAX71937', 'AAX72283', 'AAX71511']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 25%|██████████████████████████▊                                                                                  | 58098/235967 [45:20<2:22:16, 20.84it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['EAN30550']
+ 25%|███████████████████████████▏                                                                                 | 58926/235967 [46:00<2:18:11, 21.35it/s]
+Requested 1000 files, but only got 997 files.                                                  Probably Broken Link for ['AAG27598', 'CAK05024', 'CAQ15478'
+]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 25%|███████████████████████████▌                                                                                 | 59646/235967 [46:40<2:24:56, 20.28it/s]
+Requested 1000 files, but only got 995 files.                                                  Probably Broken Link for ['CAX13852', 'CAQ14815', 'CAQ15307'
+, 'CAI11740', 'CAX13853']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 26%|███████████████████████████▉                                                                                 | 60372/235967 [47:30<2:40:27, 18.24it/s]
+Requested 1000 files, but only got 997 files.                                                  Probably Broken Link for ['CAM22112', 'CAM22114', 'CAM22113'
+]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 26%|████████████████████████████▌                                                                                | 61942/235967 [49:00<2:39:37, 18.17it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['AAC04576']
+ 27%|█████████████████████████████                                                                                | 62787/235967 [49:40<2:37:59, 18.27it/s]
+Requested 1000 files, but only got 982 files.                                                  Probably Broken Link for ['CAI21139', 'CAI24804', 'CAI11971'
+, 'CAI12067', 'CAI24802', 'CAI24803', 'CAK05146', 'CAI12039', 'CAI20730', 'CAI24805', 'CAI24801', 'CAI20944', 'CAI20605', 'CAI24800', 'CAI11646', 'CAI11966
+', 'CAI21008', 'CAQ13312']
+ 27%|█████████████████████████████▎                                                                               | 63538/235967 [50:10<2:22:40, 20.14it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 27%|█████████████████████████████▋                                                                               | 64227/235967 [51:00<2:36:18, 18.31it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CAP09380']
+ 27%|█████████████████████████████▉                                                                               | 64871/235967 [51:40<2:48:41, 16.90it/s]
+Requested 1000 files, but only got 997 files.                                                  Probably Broken Link for ['CAN88791', 'EAZ33062', 'CAM13142'
+]
+ 28%|██████████████████████████████▎                                                                              | 65572/235967 [52:30<2:53:52, 16.33it/s]
+Requested 1000 files, but only got 993 files.                                                  Probably Broken Link for ['CAK05016', 'CAN88068', 'CAH69141'
+, 'CAQ13477', 'CAI20831', 'CAQ13476', 'BAF25026']
+ 28%|██████████████████████████████▋                                                                              | 66428/235967 [53:10<2:41:58, 17.45it/s]
+Requested 1000 files, but only got 996 files.                                                  Probably Broken Link for ['CAN87720', 'EAL34444', 'CAK11108'
+, 'CAQ13548']
+ 28%|██████████████████████████████▉                                                                              | 67085/235967 [54:10<2:59:26, 15.69it/s]
+Requested 1000 files, but only got 983 files.                                                  Probably Broken Link for ['CAF23580', 'CAP19438', 'CAF23419'
+, 'CAF23342', 'CAF23518', 'CAF23807', 'CAF24348', 'CAM14165', 'CAX12885', 'CAK04866', 'CAM56728', 'CAE30389', 'CAF23409', 'CAN88146', 'CAF23119', 'CAX12886
+']
+ 29%|███████████████████████████████▎                                                                             | 67700/235967 [54:50<3:00:36, 15.53it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CAN88495']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 29%|███████████████████████████████▊                                                                             | 68948/235967 [56:00<2:47:57, 16.57it/s]
+Requested 1000 files, but only got 996 files.                                                  Probably Broken Link for ['CAM56401', 'CAQ15477', 'AAH38009'
+, 'CAQ13314']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other DNA'
+ 30%|████████████████████████████████▏                                                                            | 69750/235967 [56:40<2:31:56, 18.23it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['SIT98735', 'SIT99166']
+ 30%|████████████████████████████████▋                                                                            | 70666/235967 [57:20<2:24:37, 19.05it/s]
+Requested 1000 files, but only got 993 files.                                                  Probably Broken Link for ['CAM17163', 'CAM14219', 'CAM15464'
+, 'CAM17161', 'CAM14217', 'CAB03422', 'CAM17159']
+ 30%|█████████████████████████████████▏                                                                           | 71755/235967 [58:20<2:25:31, 18.81it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['CAH71036', 'AAO41537']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 31%|█████████████████████████████████▎                                                                           | 72242/235967 [58:50<2:33:48, 17.74it/s]
+Requested 1000 files, but only got 996 files.                                                  Probably Broken Link for ['AAN66154', 'AAN66279', 'AAN68130'
+, 'AAN68372']
+ 31%|█████████████████████████████████▊                                                                           | 73065/235967 [59:20<2:11:53, 20.59it/s]
+Requested 1000 files, but only got 995 files.                                                  Probably Broken Link for ['AAH50033', 'CAQ51682', 'CAM16119'
+]
+ 32%|█████████████████████████████████▊                                                                         | 74494/235967 [1:00:20<1:55:51, 23.23it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CCD70307']
+ 32%|█████████████████████████████████▉                                                                         | 74864/235967 [1:00:50<2:19:40, 19.22it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['AAM73329']
+ 32%|██████████████████████████████████                                                                         | 75247/235967 [1:01:30<2:40:57, 16.64it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other DNA'
+ 32%|██████████████████████████████████▎                                                                        | 75803/235967 [1:02:00<2:37:06, 16.99it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['AAK29182']
+ 33%|███████████████████████████████████                                                                        | 77456/235967 [1:03:30<2:18:14, 19.11it/s]
+Requested 1000 files, but only got 996 files.                                                  Probably Broken Link for ['AAS64118', 'AAS63971', 'AAL21290'
+, 'AAS61421']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 33%|███████████████████████████████████▎                                                                       | 77910/235967 [1:03:50<2:23:55, 18.30it/s]
+Requested 1000 files, but only got 997 files.                                                  Probably Broken Link for ['CAC47204', 'CAC45563', 'CAC45819'
+]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 33%|███████████████████████████████████▌                                                                       | 78442/235967 [1:04:30<2:27:52, 17.75it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['CCD63211', 'CCD63210']
+ 33%|███████████████████████████████████▋                                                                       | 78693/235967 [1:04:48<3:08:26, 13.91it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CAI35261']
+ 34%|████████████████████████████████████▎                                                                      | 80018/235967 [1:06:40<3:16:21, 13.24it/s]
+Requested 1000 files, but only got 992 files.                                                  Probably Broken Link for ['CAM22523', 'CAM26864', 'CAQ51620'
+, 'CAM45938', 'CAM45939', 'CAM26862', 'CAM26863', 'CAM45936']
+ 34%|████████████████████████████████████▍                                                                      | 80309/235967 [1:06:59<3:43:53, 11.59it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['AEE32152', 'AEE32153']
+ 35%|█████████████████████████████████████▏                                                                     | 81920/235967 [1:09:19<3:54:46, 10.94it/s]
+Requested 1000 files, but only got 996 files.                                                  Probably Broken Link for ['AAF48411', 'CAM27358', 'CAM13116'
+, 'CAM28300']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other DNA'
+ 35%|█████████████████████████████████████▎                                                                     | 82294/235967 [1:10:10<3:51:20, 11.07it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CAI20632']
+ 35%|█████████████████████████████████████▊                                                                     | 83352/235967 [1:11:37<4:10:19, 10.16it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['AAN13606']
+ 36%|██████████████████████████████████████▏                                                                    | 84123/235967 [1:12:50<3:42:33, 11.37it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CDX74018']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 36%|██████████████████████████████████████▎                                                                    | 84627/235967 [1:13:30<3:32:22, 11.88it/s]
+Requested 1000 files, but only got 997 files.                                                  Probably Broken Link for ['CAI11781', 'CAQ13290', 'EJD42068'
+]
+ 36%|██████████████████████████████████████▊                                                                    | 85509/235967 [1:14:00<2:36:22, 16.04it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CAN88236']
+ 37%|███████████████████████████████████████▏                                                                   | 86358/235967 [1:14:30<2:08:11, 19.45it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CAK11034']
+ 37%|███████████████████████████████████████▌                                                                   | 87340/235967 [1:15:20<2:03:34, 20.05it/s]
+Requested 1000 files, but only got 981 files.                                                  Probably Broken Link for ['CAM13192', 'CAM23448', 'CAM16344'
+, 'CAO78129', 'CAM22391', 'CAM13000', 'CAM23450', 'CAM27059', 'CAM27060', 'CAM21674', 'CAM16313', 'CAM23449', 'CAM24262', 'CAM28037', 'CAO78007', 'CAM27058
+', 'CAM16193', 'CAM24263', 'CAM14199']
+ 37%|████████████████████████████████████████                                                                   | 88214/235967 [1:15:50<1:52:42, 21.85it/s]
+Requested 1000 files, but only got 992 files.                                                  Probably Broken Link for ['CAM18308', 'CAM18307', 'CAM18306'
+, 'CAM18309', 'CAM56381', 'CAM47011', 'CAM56649', 'CAM18305']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+ 38%|████████████████████████████████████████▍                                                                  | 89080/235967 [1:16:30<1:52:27, 21.77it/s]
+Requested 1000 files, but only got 997 files.                                                  Probably Broken Link for ['CAQ13596', 'CAN88403', 'CAM38219'
+]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+ 38%|████████████████████████████████████████▊                                                                  | 90027/235967 [1:17:10<1:45:51, 22.98it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CAK04253']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+ 39%|█████████████████████████████████████████▋                                                                 | 91848/235967 [1:18:20<1:38:36, 24.36it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['CAN88027', 'CAN88489']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+ 39%|██████████████████████████████████████████                                                                 | 92757/235967 [1:19:00<1:36:58, 24.61it/s]
+Requested 1000 files, but only got 997 files.                                                  Probably Broken Link for ['CAN88293', 'CAN88515', 'CAN88313'
+]
+ 40%|██████████████████████████████████████████▍                                                                | 93719/235967 [1:19:30<1:31:55, 25.79it/s]
+Requested 1000 files, but only got 994 files.                                                  Probably Broken Link for ['ABR84204', 'ABR85201', 'ABR85933'
+, 'ABR83847', 'ABR85973', 'ABR84560']
+ 40%|██████████████████████████████████████████▉                                                                | 94683/235967 [1:20:00<1:28:14, 26.68it/s]
+Requested 1000 files, but only got 997 files.                                                  Probably Broken Link for ['EAT97405', 'EAU00769', 'EAU00781'
+]
+ 41%|███████████████████████████████████████████▎                                                               | 95630/235967 [1:20:20<1:24:48, 27.58it/s]
+Requested 1000 files, but only got 997 files.                                                  Probably Broken Link for ['ABV63182', 'CAE49228', 'ABV61999'
+]
+ 41%|███████████████████████████████████████████▎                                                               | 95630/235967 [1:20:40<1:24:48, 27.58it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+ 41%|███████████████████████████████████████████▊                                                               | 96595/235967 [1:21:00<1:15:10, 30.90it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['CAP19557', 'CAP09451']
+ 41%|████████████████████████████████████████████▏                                                              | 97497/235967 [1:21:20<1:10:21, 32.80it/s]
+Requested 1000 files, but only got 996 files.                                                  Probably Broken Link for ['CAP19511', 'CAP19512']
+ 42%|████████████████████████████████████████████▋                                                              | 98435/235967 [1:21:50<1:08:24, 33.50it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CAP50353']
+ 42%|█████████████████████████████████████████████                                                              | 99379/235967 [1:22:10<1:07:06, 33.92it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['CAQ15298', 'CAQ13680']
+ 43%|█████████████████████████████████████████████▉                                                            | 102258/235967 [1:23:40<1:03:05, 35.32it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['CAM23506', 'CAM25329']
+ 44%|██████████████████████████████████████████████▎                                                           | 103210/235967 [1:24:00<1:02:33, 35.37it/s]
+Requested 1000 files, but only got 969 files.                                                  Probably Broken Link for ['EDW72994', 'EDW66471', 'EDW78358'
+, 'EDV42796', 'EDW13640', 'EDX02314', 'EDV31805', 'EDW69346', 'EDW67551', 'EDW16674', 'EDW18681', 'EDW14204', 'EDV51044', 'EDW89526', 'EDV47524', 'EDW80830
+', 'EDW81180', 'EDW96330', 'EDW99417', 'EDV40319', 'EDV36019', 'EDW59011', 'EDW06294', 'EDW15389', 'EDW81584', 'EDV41498', 'EDW18872', 'EDW93538', 'EDW1576
+4', 'EDW62576', 'EDV43544']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+ 44%|██████████████████████████████████████████████▊                                                           | 104166/235967 [1:24:22<1:06:58, 32.80it/s]
+Requested 1000 files, but only got 996 files.                                                  Probably Broken Link for ['EDY72128', 'AEA98376', 'EDY70661'
+, 'AEA99857']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+ 45%|███████████████████████████████████████████████▋                                                          | 106120/235967 [1:25:30<1:03:45, 33.94it/s]
+Requested 1000 files, but only got 942 files.                                                  Probably Broken Link for ['ACJ57278', 'ACJ56210', 'ACJ56519'
+, 'ACJ57867', 'ACJ58683', 'ACJ57085', 'ACJ59280', 'ACJ58234', 'ACJ56203', 'ACJ56487', 'ACJ57032', 'ACJ57454', 'ACJ57344', 'ACJ58810', 'ACJ57415', 'ACJ56121
+', 'ACJ57124', 'AFW88599', 'ACJ56155', 'ACJ57912', 'ACJ56642', 'ACJ58828', 'ACJ56668', 'ACJ57335', 'ACJ58220', 'ACJ56322', 'ACJ57400', 'ACJ58721', 'ACJ4067
+4', 'ACJ58527', 'ACJ57020', 'ACJ59193', 'ACJ58750', 'ACJ58594', 'EEB08399', 'ACJ59161', 'ACJ58938', 'ACJ58422', 'ACJ57401', 'ACJ57964', 'ACJ56448', 'ACJ574
+51', 'ACJ58149', 'ACJ57838', 'ACJ57500', 'ACJ59011', 'ACJ57449', 'ACJ57355', 'ACJ56419', 'ACJ58036', 'ACJ56978', 'ACJ59241', 'ACJ57053', 'ACJ57548', 'ACJ58
+525', 'ACJ59131', 'ACJ58116', 'ACJ56923']
+ 46%|████████████████████████████████████████████████▌                                                         | 107986/235967 [1:26:30<1:04:48, 32.91it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CAX14617']
+ 46%|████████████████████████████████████████████████▉                                                         | 108944/235967 [1:26:50<1:01:01, 34.69it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['EEE95835', 'EEE93357']
+ 47%|█████████████████████████████████████████████████▎                                                        | 109856/235967 [1:27:20<1:01:39, 34.09it/s]
+Requested 1000 files, but only got 988 files.                                                  Probably Broken Link for ['ERP66814', 'ACM64679', 'ACM64784'
+, 'ACM64666', 'ACM64871', 'ACM64474', 'ERP49380', 'ACM64440', 'ACM64649', 'ACM64696', 'ACM64786']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+ 48%|███████████████████████████████████████████████████▌                                                        | 112549/235967 [1:28:40<55:56, 36.77it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+ 48%|██████████████████████████████████████████████████▉                                                       | 113457/235967 [1:29:10<1:03:27, 32.18it/s]
+Requested 1000 files, but only got 994 files.                                                  Probably Broken Link for ['CCD72174', 'CCD72173', 'CCD72169'
+, 'CCD72168', 'CCD72171', 'CCD72172']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+ 48%|███████████████████████████████████████████████████▏                                                      | 113988/235967 [1:29:50<1:22:36, 24.61it/s]
+Requested 1000 files, but only got 995 files.                                                  Probably Broken Link for ['CCD68959', 'CAB01642', 'CAQ35039'
+, 'CAB03026', 'CCD67584']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+ 48%|███████████████████████████████████████████████████▍                                                      | 114388/235967 [1:30:30<1:37:26, 20.80it/s]
+Requested 1000 files, but only got 987 files.                                                  Probably Broken Link for ['EAL26626', 'CAH70261', 'CAH70657'
+, 'CAH70168', 'CAH70167', 'CAH70262', 'EDW64448', 'CAH70656', 'AAC53533', 'CCD72661', 'CAI15720', 'CAH70170', 'CAI15721']
+ 49%|███████████████████████████████████████████████████▌                                                      | 114700/235967 [1:30:45<1:56:45, 17.31it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['AAB95085']
+ 49%|███████████████████████████████████████████████████▊                                                      | 115321/235967 [1:31:20<1:43:41, 19.39it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CAB07477']
+ 49%|███████████████████████████████████████████████████▉                                                      | 115728/235967 [1:31:50<1:50:57, 18.06it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['CCD70003', 'CCD70551']
+ 49%|████████████████████████████████████████████████████▎                                                     | 116437/235967 [1:32:50<2:17:44, 14.46it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['AAN13366', 'CAI42951']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 49%|████████████████████████████████████████████████████▍                                                     | 116785/235967 [1:33:20<2:19:37, 14.23it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CAB14182']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+ 50%|████████████████████████████████████████████████████▌                                                     | 117011/235967 [1:33:37<2:45:36, 11.97it/s]
+Requested 1000 files, but only got 993 files.                                                  Probably Broken Link for ['CAI23317', 'CAB92071', 'CAA54518'
+, 'CAI23318', 'CAA54521']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 50%|████████████████████████████████████████████████████▋                                                     | 117262/235967 [1:34:20<2:50:37, 11.60it/s]
+Requested 1000 files, but only got 995 files.                                                  Probably Broken Link for ['CAI19694', 'CAI22967', 'CAI22966'
+, 'AAF57188', 'CAI19695']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+ 50%|████████████████████████████████████████████████████▊                                                     | 117498/235967 [1:34:24<2:57:26, 11.13it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['SIT99095', 'SIT98870']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. File String: /n /n
+ID   CAA39298; SV 1; linear; genomic DNA; STD; PRO; 795 BP.
+XX
+PA   X55778.1
+XX
+DT   04-APR-1991 (Rel. 28, Created)
+DT   23-OCT-2008 (Rel. 97, Last updated, Version 3)
+XX
+DE   Salmonella enterica subsp. enterica serovar Typhimurium peptidase M
+XX
+KW   .
+XX
+OS   Salmonella enterica subsp. enterica serovar Typhimurium
+OC   Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales;
+OC   Enterobacteriaceae; Salmonella.
+XX
+RN   [1]
+RX   DOI; 10.1007/BF00265075.
+RX   PUBMED; 2250660.
+RA   Movva N.R., Semon D., Meyer C., Kawashima E., Wingfield P., Miller J.L.,
+RA   Miller C.G.;
+RT   "Cloning and nucleotide sequence of the Salmonella typhimurium pepM gene";
+RL   Mol. Gen. Genet. 223(2):345-348(1990).
+XX
+RN   [2]
+RA   Miller C.G.;
+RT   ;
+RL   Submitted (28-FEB-1991) to the INSDC.
+RL   C.G. Miller, University of Illinois at Urbana-Champaign, Department of
+RL   Microbiology, 131 Burrill Hall, 407 S. Goodwin Ave., Urbana IL 61801  /n /n------------------------------ EOF
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 50%|████████████████████████████████████████████████████▉                                                     | 117939/235967 [1:35:10<2:34:32, 12.73it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 50%|█████████████████████████████████████████████████████▏                                                    | 118338/235967 [1:35:40<2:45:40, 11.83it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CAM22684']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 50%|█████████████████████████████████████████████████████▍                                                    | 118897/235967 [1:36:30<2:42:33, 12.00it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 51%|█████████████████████████████████████████████████████▌                                                    | 119217/235967 [1:36:59<3:08:24, 10.33it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+ 51%|█████████████████████████████████████████████████████▋                                                    | 119537/235967 [1:37:41<3:24:03,  9.51it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['ABV53713']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 51%|█████████████████████████████████████████████████████▊                                                    | 119889/235967 [1:38:26<3:36:39,  8.93it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['AAC50324']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 51%|█████████████████████████████████████████████████████▉                                                    | 120209/235967 [1:39:15<3:58:11,  8.10it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['AAS65216', 'EDY73464']
+Warning. Could not determine if file is genomic or mRna. Unknown String. File String: /n /n
+ID   CAA39299; SV 1; linear; genomic DNA; STD; PRO; 333 BP.
+XX
+PA   X55778.1
+XX
+DT   04-APR-1991 (Rel. 28, Created)
+DT   23-OCT-2008 (Rel. 97, Last updated, Version 3)
+XX
+DE   Salmonella enterica subsp. enterica serovar Typhimurium hypothetical
+DE   protein
+XX
+KW   .
+XX
+OS   Salmonella enterica subsp. enterica serovar Typhimurium
+OC   Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales;
+OC   Enterobacteriaceae; Salmonella.
+XX
+RN   [1]
+RX   DOI; 10.1007/BF00265075.
+RX   PUBMED; 2250660.
+RA   Movva N.R., Semon D., Meyer C., Kawashima E., Wingfield P., Miller J.L.,
+RA   Miller C.G.;
+RT   "Cloning and nucleotide sequence of the Salmonella typhimurium pepM gene";
+RL   Mol. Gen. Genet. 223(2):345-348(1990).
+XX
+RN   [2]
+RA   Miller C.G.;
+RT   ;
+RL   Submitted (28-FEB-1991) to the INSDC.
+RL   C.G. Miller, University of Illinois at Urbana-Champaign, Department of
+RL   Microbiology, 131 Burrill Hall, 407 S. Goodwin Ave., Urbana IL 61801  /n /n------------------------------ EOF
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 51%|██████████████████████████████████████████████████████▏                                                   | 120576/235967 [1:40:06<4:05:53,  7.82it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+ 51%|██████████████████████████████████████████████████████▎                                                   | 121020/235967 [1:40:52<3:49:26,  8.35it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 51%|██████████████████████████████████████████████████████▌                                                   | 121365/235967 [1:41:39<3:56:43,  8.07it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['AAX53004']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+ 52%|██████████████████████████████████████████████████████▋                                                   | 121716/235967 [1:42:22<3:56:28,  8.05it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['CAB12151', 'AAA19800']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 52%|██████████████████████████████████████████████████████▊                                                   | 122042/235967 [1:43:04<3:58:01,  7.98it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['AAA22829', 'CAA56494']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 52%|██████████████████████████████████████████████████████▉                                                   | 122416/235967 [1:43:48<3:51:48,  8.16it/s]
+Requested 1000 files, but only got 995 files.                                                  Probably Broken Link for ['CAM23743', 'CAM23742', 'CAM20943'
+, 'AAA63611', 'CAM20945']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 52%|███████████████████████████████████████████████████████▏                                                  | 122911/235967 [1:44:40<3:21:53,  9.33it/s]
+Requested 1000 files, but only got 996 files.                                                  Probably Broken Link for ['CAH72211', 'AAC42007', 'CAH70526'
+, 'CAI39585']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 52%|███████████████████████████████████████████████████████▍                                                  | 123287/235967 [1:45:15<3:30:48,  8.91it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+ 52%|███████████████████████████████████████████████████████▌                                                  | 123637/235967 [1:46:00<3:38:17,  8.58it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 53%|███████████████████████████████████████████████████████▋                                                  | 124044/235967 [1:46:46<3:35:24,  8.66it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['SIT99004', 'SIT99030']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 53%|███████████████████████████████████████████████████████▉                                                  | 124627/235967 [1:47:40<3:03:59, 10.09it/s]
+Requested 1000 files, but only got 996 files.                                                  Probably Broken Link for ['SIT99102', 'SIT98696', 'SIT98994'
+, 'SIT98992']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other DNA'
+ 53%|████████████████████████████████████████████████████████▏                                                 | 125216/235967 [1:48:30<2:46:59, 11.05it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['SIT98490']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 53%|████████████████████████████████████████████████████████▍                                                 | 125723/235967 [1:49:10<2:40:45, 11.43it/s]
+Requested 1000 files, but only got 994 files.                                                  Probably Broken Link for ['ABC65840', 'CAD92520', 'CCD65289'
+, 'CAI17103', 'CCD69260', 'CAI22602']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+ 53%|████████████████████████████████████████████████████████▋                                                 | 126188/235967 [1:49:50<2:45:39, 11.04it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['AAB30804', 'AAS64897']
+ 54%|████████████████████████████████████████████████████████▉                                                 | 126781/235967 [1:50:40<2:32:45, 11.91it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CAB26041']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 54%|█████████████████████████████████████████████████████████▏                                                | 127437/235967 [1:51:20<2:21:58, 12.74it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CCD62344']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+ 54%|█████████████████████████████████████████████████████████▌                                                | 128018/235967 [1:52:10<2:21:50, 12.68it/s]
+Requested 1000 files, but only got 972 files.                                                  Probably Broken Link for ['CAM16953', 'CAM21591', 'CAM19669'
+, 'CAA87786', 'CAQ11261', 'CAQ13051', 'CAO77919', 'CAO78077', 'CAP19222', 'CAQ13050', 'CAO77735', 'CAQ11260', 'CAQ14391', 'CAP19221', 'CAM16884', 'CAA87056
+', 'CAM13964', 'CAM21666', 'CAM17710', 'CAQ14392', 'CAO78078', 'CAO77917', 'CAO77918', 'CAO77734', 'CAO77920', 'CAM17858', 'CAO78120', 'CAO78121']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+ 55%|█████████████████████████████████████████████████████████▊                                                | 128661/235967 [1:52:50<2:16:53, 13.07it/s]
+Requested 1000 files, but only got 992 files.                                                  Probably Broken Link for ['BAF09254', 'BAF13690', 'ABI62775'
+, 'ABI61330', 'ABI61888', 'ABI63103', 'CAD88213', 'EAZ34626']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+ 55%|██████████████████████████████████████████████████████████▏                                               | 129396/235967 [1:53:50<2:13:39, 13.29it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['BAF05503', 'AAS63450']
+ 55%|██████████████████████████████████████████████████████████▌                                               | 130236/235967 [1:54:40<2:06:00, 13.99it/s]
+Requested 1000 files, but only got 992 files.                                                  Probably Broken Link for ['CCD61697', 'CCD68975', 'CAE47468'
+, 'CCD63174', 'CAC70095', 'CCD63175', 'CCD65728', 'CAD44136']
+ 55%|██████████████████████████████████████████████████████████▋                                               | 130773/235967 [1:55:30<2:09:17, 13.56it/s]
+Requested 1000 files, but only got 990 files.                                                  Probably Broken Link for ['CAI39626', 'CAM21267', 'CAI40743'
+, 'CAI41305', 'CAI17115', 'CAM21268', 'CAI19651', 'CAM21269', 'CAM21270', 'CAI20579']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other DNA'
+ 56%|██████████████████████████████████████████████████████████▉                                               | 131107/235967 [1:55:54<2:26:31, 11.93it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CBW48349']
+ 56%|███████████████████████████████████████████████████████████▌                                              | 132626/235967 [1:57:50<2:06:52, 13.58it/s]
+Requested 1000 files, but only got 985 files.                                                  Probably Broken Link for ['CAK11314', 'CAK10906', 'CAK04662'
+, 'CAK03630', 'CAK05186', 'CAK04357', 'CAK04189', 'CAK11382', 'CAK04661', 'CAK04454', 'CAA98502', 'CAK04388', 'CAK11381', 'CAK04109', 'CAN87750']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+ 57%|███████████████████████████████████████████████████████████▉                                              | 133490/235967 [1:58:40<1:56:00, 14.72it/s]
+Requested 1000 files, but only got 977 files.                                                  Probably Broken Link for ['EAL28571', 'EAL28403', 'EAL26152'
+, 'CBK19522', 'EAL25908', 'EAL28113', 'EAL32331', 'EAL26803', 'EAL25137', 'CCD62388', 'CAC42337', 'EAL32089', 'EAL27911', 'EAL27340', 'EAL28548', 'EAL27309
+', 'EAL28242', 'EAL25454', 'EAL25118', 'EAL26657', 'CAH19101', 'EAL28581', 'EAL28766']
+ 57%|████████████████████████████████████████████████████████████▎                                             | 134173/235967 [1:59:30<1:54:32, 14.81it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+ 57%|████████████████████████████████████████████████████████████▋                                             | 135106/235967 [2:00:20<1:44:15, 16.12it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['EAL31140', 'EAL29597']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+ 58%|█████████████████████████████████████████████████████████████                                             | 135901/235967 [2:01:00<1:42:43, 16.24it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['AAZ08181', 'MEC5498499']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+ 58%|█████████████████████████████████████████████████████████████▍                                            | 136775/235967 [2:01:50<1:38:33, 16.77it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 59%|██████████████████████████████████████████████████████████████▏                                           | 138355/235967 [2:03:30<1:39:19, 16.38it/s]
+Requested 1000 files, but only got 986 files.                                                  Probably Broken Link for ['AAH46464', 'CAM46305', 'CAP19076'
+, 'CAM23036', 'CAM25219', 'CAM23035', 'CAM24580', 'CAM46306', 'CAM23034', 'CAM21042', 'CAM25218', 'CAM24579', 'CAM21041', 'CAM16101']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+ 59%|██████████████████████████████████████████████████████████████▍                                           | 139057/235967 [2:04:20<1:41:41, 15.88it/s]
+Requested 1000 files, but only got 997 files.                                                  Probably Broken Link for ['AAX72982', 'AAA71981', 'AFW81976'
+]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 59%|██████████████████████████████████████████████████████████████▊                                           | 139774/235967 [2:05:10<1:43:36, 15.47it/s]
+Requested 1000 files, but only got 990 files.                                                  Probably Broken Link for ['CAI23640', 'AAX72524', 'CAI14088'
+, 'CAI14090', 'AAX72696', 'AAX71707', 'CAI23642', 'CAQ13370', 'AAX71970', 'CAK11040']
+ 60%|███████████████████████████████████████████████████████████████▏                                          | 140596/235967 [2:06:00<1:39:58, 15.90it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['CAK04387', 'CAM16277']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+ 60%|███████████████████████████████████████████████████████████████▌                                          | 141360/235967 [2:06:50<1:41:53, 15.48it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 60%|███████████████████████████████████████████████████████████████▊                                          | 142160/235967 [2:07:40<1:41:43, 15.37it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 61%|████████████████████████████████████████████████████████████████▏                                         | 142799/235967 [2:08:40<1:47:52, 14.39it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['CAM14201', 'CAH68950']
+ 61%|████████████████████████████████████████████████████████████████▌                                         | 143610/235967 [2:09:30<1:42:19, 15.04it/s]
+Requested 1000 files, but only got 997 files.                                                  Probably Broken Link for ['BAF04212', 'BAF07072', 'CAQ14869'
+]
+ 61%|████████████████████████████████████████████████████████████████▉                                         | 144451/235967 [2:10:10<1:36:19, 15.83it/s]
+Requested 1000 files, but only got 980 files.                                                  Probably Broken Link for ['CAI24907', 'CAH71185', 'CAI19113'
+, 'CAI35939', 'CAI19108', 'CAI51882', 'CAI19109', 'CAI11844', 'CAI24906', 'CAH71184', 'CAH71337', 'CAI35940', 'CAI19110', 'CAH71183', 'CAI11729', 'CAH71338
+', 'CAH71336', 'CAH68897', 'CAI52040', 'CAI11650']
+ 62%|█████████████████████████████████████████████████████████████████▏                                        | 145142/235967 [2:11:00<1:39:14, 15.25it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['EAZ33256']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 62%|█████████████████████████████████████████████████████████████████▊                                        | 146412/235967 [2:12:40<1:47:02, 13.94it/s]
+Requested 1000 files, but only got 997 files.                                                  Probably Broken Link for ['AAH32179', 'EAZ35350', 'BAF17651'
+]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 62%|██████████████████████████████████████████████████████████████████                                        | 147052/235967 [2:13:30<1:44:52, 14.13it/s]
+Requested 1000 files, but only got 991 files.                                                  Probably Broken Link for ['CAH68966', 'CAI20932', 'CAM14062'
+, 'CAI20933', 'CAM14061', 'CAI11539', 'CAM14060', 'CAK04091', 'CAH68967']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+ 63%|██████████████████████████████████████████████████████████████████▍                                       | 147892/235967 [2:14:20<1:41:28, 14.47it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['EAZ35482']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+ 63%|██████████████████████████████████████████████████████████████████▊                                       | 148624/235967 [2:15:20<1:44:04, 13.99it/s]
+Requested 1000 files, but only got 970 files.                                                  Probably Broken Link for ['CAF24313', 'CAI21706', 'CAI25544'
+, 'CAM15913', 'CAI25545', 'CAF23167', 'CAI25546', 'CAK05286', 'CAF22876', 'AAR12162', 'CAF24237', 'CAF23950', 'CAF23328', 'CAI16562', 'CAI21142', 'CAF22998
+', 'CAH68875', 'CAF23090', 'CAH73245', 'CAI29395', 'CAF24100', 'CAH73244', 'CAI16217', 'CAI16563', 'CAF23588', 'CAI21705', 'CAF23367', 'CAF24482', 'CAH6911
+4', 'CAE76970']
+ 63%|███████████████████████████████████████████████████████████████████                                       | 149221/235967 [2:16:10<1:48:30, 13.32it/s]
+Requested 1000 files, but only got 992 files.                                                  Probably Broken Link for ['CAM16940', 'CAM17340', 'CAM16931'
+, 'BAF23871', 'CAM17339', 'CAE50173', 'CAM20294', 'CAO77877']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other RNA'
+ 64%|███████████████████████████████████████████████████████████████████▌                                      | 150405/235967 [2:17:40<1:47:10, 13.31it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['CCD71417', 'CAQ15428']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 64%|███████████████████████████████████████████████████████████████████▉                                      | 151153/235967 [2:18:30<1:41:40, 13.90it/s]
+Requested 1000 files, but only got 996 files.                                                  Probably Broken Link for ['SIT98873', 'SIT99020', 'SIT98525'
+, 'SIT98554']
+ 64%|████████████████████████████████████████████████████████████████████▎                                     | 152012/235967 [2:19:20<1:33:59, 14.89it/s]
+Requested 1000 files, but only got 991 files.                                                  Probably Broken Link for ['CAK04686', 'CAM22106', 'CAM56407'
+, 'CAK04523', 'CAI20735', 'AAH21490', 'CAK04664', 'CAI11842', 'CAM13143']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 65%|████████████████████████████████████████████████████████████████████▍                                     | 152432/235967 [2:19:53<1:46:45, 13.04it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['BAC69385']
+ 65%|████████████████████████████████████████████████████████████████████▊                                     | 153079/235967 [2:20:50<1:41:45, 13.58it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['AAH08984', 'CAD90174']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+ 65%|█████████████████████████████████████████████████████████████████████                                     | 153612/235967 [2:21:40<1:45:28, 13.01it/s]
+Requested 1000 files, but only got 997 files.                                                  Probably Broken Link for ['AAN70633', 'AAN66821', 'AAN66919'
+]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+ 65%|█████████████████████████████████████████████████████████████████████▎                                    | 154229/235967 [2:22:20<1:41:40, 13.40it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['CAM16104', 'CAM16103']
+ 66%|█████████████████████████████████████████████████████████████████████▉                                    | 155625/235967 [2:23:50<1:33:16, 14.36it/s]
+Requested 1000 files, but only got 996 files.                                                  Probably Broken Link for ['CAM22089', 'CAM22088', 'BAF06998'
+, 'CAI35184']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+ 66%|██████████████████████████████████████████████████████████████████████                                    | 156041/235967 [2:24:25<1:45:06, 12.67it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CCD61402']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other DNA'
+ 67%|██████████████████████████████████████████████████████████████████████▌                                   | 156980/235967 [2:26:10<1:52:10, 11.74it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+ 67%|██████████████████████████████████████████████████████████████████████▊                                   | 157517/235967 [2:27:00<1:51:14, 11.75it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['BAB37647']
+ 67%|███████████████████████████████████████████████████████████████████████                                   | 158082/235967 [2:27:40<1:45:08, 12.35it/s]
+Requested 1000 files, but only got 992 files.                                                  Probably Broken Link for ['CAK04365', 'CAP19404', 'AAS63269'
+, 'CAM13574', 'CAP19402', 'CAM13573', 'CAP19403', 'AAS61636']
+ 67%|███████████████████████████████████████████████████████████████████████▎                                  | 158647/235967 [2:28:20<1:42:44, 12.54it/s]
+Requested 1000 files, but only got 997 files.                                                  Probably Broken Link for ['AAK83926', 'CAC47741', 'CAC45956'
+]
+ 67%|███████████████████████████████████████████████████████████████████████▍                                  | 159122/235967 [2:28:55<1:49:54, 11.65it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['CCD66228', 'CCD66230']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 68%|███████████████████████████████████████████████████████████████████████▌                                  | 159369/235967 [2:29:40<2:09:42,  9.84it/s]
+Requested 1000 files, but only got 997 files.                                                  Probably Broken Link for ['CAI24592', 'CAI24593', 'CAI24594'
+]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 68%|███████████████████████████████████████████████████████████████████████▊                                  | 159945/235967 [2:30:40<1:56:53, 10.84it/s]
+Requested 1000 files, but only got 997 files.                                                  Probably Broken Link for ['CAD31752', 'AAK15035', 'CAA90189'
+]
+ 68%|████████████████████████████████████████████████████████████████████████                                  | 160313/235967 [2:31:08<2:05:14, 10.07it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CAM19996']
+ 68%|████████████████████████████████████████████████████████████████████████▏                                 | 160671/235967 [2:31:52<2:12:53,  9.44it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+ 68%|████████████████████████████████████████████████████████████████████████▌                                 | 161447/235967 [2:33:40<2:15:15,  9.18it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+ 69%|████████████████████████████████████████████████████████████████████████▊                                 | 162106/235967 [2:34:20<1:53:45, 10.82it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['AAL22995']
+ 69%|████████████████████████████████████████████████████████████████████████▉                                 | 162344/235967 [2:34:53<2:14:28,  9.12it/s]
+Requested 1000 files, but only got 997 files.                                                  Probably Broken Link for ['AFW81111', 'CAB67191', 'AFW81112'
+]
+ 69%|█████████████████████████████████████████████████████████████████████████                                 | 162573/235967 [2:35:36<2:32:44,  8.01it/s]
+Requested 1000 files, but only got 997 files.                                                  Probably Broken Link for ['CAM16612', 'CAM16613', 'CAM16614'
+]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+ 69%|█████████████████████████████████████████████████████████████████████████▌                                | 163664/235967 [2:37:50<2:42:00,  7.44it/s]
+Requested 1000 files, but only got 996 files.                                                  Probably Broken Link for ['AAF55267', 'CAM21067', 'AAN10746'
+, 'CAM18232']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+ 70%|█████████████████████████████████████████████████████████████████████████▋                                | 164038/235967 [2:38:31<2:31:01,  7.94it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['CAB17072', 'CAB16923']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 70%|█████████████████████████████████████████████████████████████████████████▊                                | 164376/235967 [2:39:17<2:34:26,  7.73it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['CAQ14393', 'CAI24789']
+ 70%|██████████████████████████████████████████████████████████████████████████                                | 164884/235967 [2:40:20<2:13:16,  8.89it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'viral cRNA'
+ 71%|███████████████████████████████████████████████████████████████████████████▏                              | 167447/235967 [2:42:50<1:17:43, 14.69it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 71%|███████████████████████████████████████████████████████████████████████████▋                              | 168435/235967 [2:43:40<1:09:23, 16.22it/s]
+Requested 1000 files, but only got 997 files.                                                  Probably Broken Link for ['CAM16528', 'CAM47032', 'CAM16526'
+]
+ 72%|████████████████████████████████████████████████████████████████████████████                              | 169374/235967 [2:44:30<1:04:17, 17.26it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['CAM56650', 'CAM39731']
+ 73%|███████████████████████████████████████████████████████████████████████████████▎                            | 173192/235967 [2:47:30<51:20, 20.38it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['ABR86223']
+ 74%|███████████████████████████████████████████████████████████████████████████████▋                            | 174192/235967 [2:48:20<50:47, 20.27it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['EAU00548']
+ 75%|████████████████████████████████████████████████████████████████████████████████▋                           | 176159/235967 [2:49:40<45:12, 22.05it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['ABV63155', 'ABV63327']
+ 75%|█████████████████████████████████████████████████████████████████████████████████                           | 177154/235967 [2:50:30<46:57, 20.87it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CAM15135']
+ 77%|██████████████████████████████████████████████████████████████████████████████████▊                         | 181031/235967 [2:53:40<45:04, 20.31it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['CAA92186', 'CAQ16150']
+ 78%|███████████████████████████████████████████████████████████████████████████████████▊                        | 183008/235967 [2:55:10<41:29, 21.27it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['EDV34787', 'EDV51970']
+ 78%|████████████████████████████████████████████████████████████████████████████████████▏                       | 184000/235967 [2:56:10<45:04, 19.21it/s]
+Requested 1000 files, but only got 990 files.                                                  Probably Broken Link for ['EDW05702', 'EDW65972', 'AEA96582'
+, 'EDW79951', 'EDW82145', 'EDW96184', 'EDW94725', 'EDY69687', 'AEA99622', 'AEA99696']
+ 79%|█████████████████████████████████████████████████████████████████████████████████████                       | 185967/235967 [2:57:50<42:32, 19.59it/s]
+Requested 1000 files, but only got 951 files.                                                  Probably Broken Link for ['ACJ59322', 'ACJ57618', 'ACJ56381'
+, 'ACJ57542', 'ACJ58723', 'ACJ58770', 'ACJ58868', 'ACJ57596', 'ACJ57268', 'ACJ58651', 'ACJ57883', 'ACJ57696', 'ACJ59349', 'ACJ58778', 'ACJ56830', 'ACJ56303
+', 'ACJ56458', 'ACJ59086', 'ACJ57650', 'ACJ57810', 'ACJ57690', 'ACJ56042', 'ACJ58378', 'ACJ57381', 'ACJ58816', 'ACJ57898', 'ACJ56005', 'ACJ59227', 'ACJ5855
+8', 'ACJ57389', 'ACJ56909', 'ACJ56792', 'ACJ58139', 'ACJ57700', 'ACJ57351', 'ACJ56734', 'ACJ57922', 'ACJ58155', 'ACJ57475', 'ACJ57394', 'ACJ58291', 'ACJ568
+37', 'ACJ56690', 'ACJ58045', 'ACJ57160', 'ACJ57195', 'ACJ58865', 'ACJ57888', 'ACJ58040']
+ 80%|██████████████████████████████████████████████████████████████████████████████████████▍                     | 188867/235967 [3:00:20<41:04, 19.11it/s]
+Requested 1000 files, but only got 995 files.                                                  Probably Broken Link for ['EEF01749', 'EEE92044', 'EEE87638'
+, 'EEF05222', 'EEE91650']
+ 80%|██████████████████████████████████████████████████████████████████████████████████████▉                     | 189829/235967 [3:01:10<39:13, 19.60it/s]
+Requested 1000 files, but only got 993 files.                                                  Probably Broken Link for ['ACM64797', 'ACM64715', 'ACM64785'
+, 'ERP49997', 'ACM64844', 'ACM64866', 'ACM64741']
+ 82%|████████████████████████████████████████████████████████████████████████████████████████▏                   | 192814/235967 [3:03:30<34:34, 20.80it/s]
+Requested 1000 files, but only got 992 files.                                                  Probably Broken Link for ['EES13422', 'EER92769', 'EES13421'
+, 'EER88154', 'CAA91488', 'EES09669', 'ADB78775', 'JAI17753']
+ 82%|████████████████████████████████████████████████████████████████████████████████████████▋                   | 193639/235967 [3:04:30<38:24, 18.37it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CCD64916']
+ 82%|████████████████████████████████████████████████████████████████████████████████████████▉                   | 194197/235967 [3:05:20<42:09, 16.51it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 83%|█████████████████████████████████████████████████████████████████████████████████████████▏                  | 194865/235967 [3:06:00<41:26, 16.53it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 83%|█████████████████████████████████████████████████████████████████████████████████████████▍                  | 195491/235967 [3:06:40<41:31, 16.24it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['AAC26224', 'CCE98752']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 83%|█████████████████████████████████████████████████████████████████████████████████████████▌                  | 195701/235967 [3:07:05<52:06, 12.88it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 83%|████████████████████████████████████████████████████████████████████████████████████████                  | 195920/235967 [3:09:57<2:39:04,  4.20it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CAC42425']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 83%|████████████████████████████████████████████████████████████████████████████████████████▏                 | 196239/235967 [3:10:36<2:04:35,  5.31it/s]
+Requested 1000 files, but only got 996 files.                                                  Probably Broken Link for ['SIT99071', 'SIT98523', 'SIT99035'
+, 'SIT99094']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 83%|████████████████████████████████████████████████████████████████████████████████████████▎                 | 196680/235967 [3:11:20<1:28:41,  7.38it/s]
+Requested 1000 files, but only got 997 files.                                                  Probably Broken Link for ['UIE54576', 'BBE36492', 'BBE36491'
+]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 84%|████████████████████████████████████████████████████████████████████████████████████████▌                 | 197200/235967 [3:12:10<1:13:23,  8.80it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['AAA88512']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 84%|████████████████████████████████████████████████████████████████████████████████████████▋                 | 197552/235967 [3:12:32<1:12:17,  8.86it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CAX24312']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 84%|████████████████████████████████████████████████████████████████████████████████████████▉                 | 197885/235967 [3:13:15<1:14:25,  8.53it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 84%|█████████████████████████████████████████████████████████████████████████████████████████                 | 198299/235967 [3:14:10<1:08:27,  9.17it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 84%|█████████████████████████████████████████████████████████████████████████████████████████▏                | 198673/235967 [3:14:40<1:05:35,  9.48it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['AAL20388', 'AAL22362']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 84%|███████████████████████████████████████████████████████████████████████████████████████████▏                | 199195/235967 [3:15:20<56:57, 10.76it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 85%|█████████████████████████████████████████████████████████████████████████████████████████▋                | 199583/235967 [3:15:52<1:00:07, 10.09it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['AAA74447', 'AAN11793']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 85%|███████████████████████████████████████████████████████████████████████████████████████████▌                | 200150/235967 [3:16:50<53:29, 11.16it/s]
+Requested 1000 files, but only got 992 files.                                                  Probably Broken Link for ['SIT98665', 'SIT99012', 'SIT99132'
+, 'SIT98505', 'SIT99026', 'SIT99164', 'SIT98920', 'SIT99083']
+ 85%|███████████████████████████████████████████████████████████████████████████████████████████▉                | 200911/235967 [3:17:30<44:06, 13.25it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['SIT99031', 'SIT98930']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 85%|████████████████████████████████████████████████████████████████████████████████████████████▏               | 201500/235967 [3:18:10<42:36, 13.48it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['QKE43664', 'QKE43661']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 86%|████████████████████████████████████████████████████████████████████████████████████████████▌               | 202214/235967 [3:18:50<38:06, 14.76it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 86%|████████████████████████████████████████████████████████████████████████████████████████████▉               | 203079/235967 [3:19:30<33:03, 16.58it/s]
+Requested 1000 files, but only got 996 files.                                                  Probably Broken Link for ['ABI63022', 'ABI61841', 'ABI63014'
+, 'ABI61811']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 86%|█████████████████████████████████████████████████████████████████████████████████████████████▎              | 203896/235967 [3:20:20<31:12, 17.13it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['ABI61324']
+ 87%|█████████████████████████████████████████████████████████████████████████████████████████████▋              | 204796/235967 [3:21:10<29:49, 17.42it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CAA88053']
+ 88%|██████████████████████████████████████████████████████████████████████████████████████████████▊             | 207249/235967 [3:23:40<28:46, 16.64it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CAK11229']
+ 88%|███████████████████████████████████████████████████████████████████████████████████████████████▎            | 208229/235967 [3:24:20<25:27, 18.16it/s]
+Requested 1000 files, but only got 993 files.                                                  Probably Broken Link for ['EAL31474', 'EAL27941', 'EAL27770'
+, 'EAL25098', 'EAL26914', 'EAL24811', 'EAL27085']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'other DNA'
+ 89%|███████████████████████████████████████████████████████████████████████████████████████████████▋            | 209173/235967 [3:25:10<24:12, 18.45it/s]
+Requested 1000 files, but only got 997 files.                                                  Probably Broken Link for ['ABC60396', 'EAL29530', 'ABC60387'
+]
+ 89%|████████████████████████████████████████████████████████████████████████████████████████████████▌           | 211060/235967 [3:26:40<20:56, 19.82it/s]
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 90%|█████████████████████████████████████████████████████████████████████████████████████████████████▍          | 212843/235967 [3:28:20<19:52, 19.40it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CAM13449']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned RNA'
+ 91%|█████████████████████████████████████████████████████████████████████████████████████████████████▊          | 213665/235967 [3:29:00<19:25, 19.13it/s]
+Requested 1000 files, but only got 991 files.                                                  Probably Broken Link for ['AAB17903', 'AAX72857', 'AAX72932'
+, 'AAX72500', 'AAX72550', 'AAX71681', 'AAX71688', 'AAX71778', 'AAX71718']
+ 91%|██████████████████████████████████████████████████████████████████████████████████████████████████▏         | 214476/235967 [3:29:50<19:14, 18.62it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['EAN31385']
+ 91%|██████████████████████████████████████████████████████████████████████████████████████████████████▌         | 215412/235967 [3:30:30<17:34, 19.48it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CAI72674']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 92%|███████████████████████████████████████████████████████████████████████████████████████████████████▋        | 217940/235967 [3:32:40<15:26, 19.45it/s]
+Requested 1000 files, but only got 996 files.                                                  Probably Broken Link for ['CKH72398', 'CAI20656', 'CAI20705'
+, 'CKH72351']
+ 94%|█████████████████████████████████████████████████████████████████████████████████████████████████████▎      | 221440/235967 [3:35:50<12:54, 18.76it/s]
+Requested 1000 files, but only got 989 files.                                                  Probably Broken Link for ['CAF23093', 'CAF24099', 'CAX13091'
+, 'CAF23389', 'CAF23548', 'CAF24031', 'CAF23483', 'CAF24392', 'CAF23406', 'CAF24739', 'CAI12003']
+ 94%|█████████████████████████████████████████████████████████████████████████████████████████████████████▊      | 222344/235967 [3:36:30<12:07, 18.73it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['CAK04282', 'BAF09103']
+ 95%|██████████████████████████████████████████████████████████████████████████████████████████████████████▌     | 223977/235967 [3:38:00<10:28, 19.06it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['SIT98558', 'CAK03707']
+ 95%|██████████████████████████████████████████████████████████████████████████████████████████████████████▉     | 224944/235967 [3:38:50<09:31, 19.30it/s]
+Requested 1000 files, but only got 997 files.                                                  Probably Broken Link for ['CAD60840', 'BAF14350', 'BAC74453'
+]
+ 96%|███████████████████████████████████████████████████████████████████████████████████████████████████████▌    | 226337/235967 [3:40:20<09:22, 17.11it/s]
+Requested 1000 files, but only got 996 files.                                                  Probably Broken Link for ['AAN70778', 'AAN66661', 'AAN66907'
+, 'AAN70062']
+ 97%|████████████████████████████████████████████████████████████████████████████████████████████████████████▋   | 228713/235967 [3:42:30<07:04, 17.08it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['CAM15196']
+ 98%|█████████████████████████████████████████████████████████████████████████████████████████████████████████▎  | 230092/235967 [3:44:00<06:09, 15.89it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['BAB36081', 'BAB36080']
+ 98%|█████████████████████████████████████████████████████████████████████████████████████████████████████████▋  | 230813/235967 [3:44:50<05:15, 16.33it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['AAC40188', 'AAS63262']
+Warning. Could not determine if file is genomic or mRna. Unknown String. Regex extracted: 'unassigned DNA'
+ 98%|█████████████████████████████████████████████████████████████████████████████████████████████████████████▉  | 231347/235967 [3:45:30<05:01, 15.31it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['CAC46438', 'CAC47382']
+ 99%|███████████████████████████████████████████████████████████████████████████████████████████████████████████▎| 234478/235967 [3:49:00<01:41, 14.66it/s]
+Requested 1000 files, but only got 994 files.                                                  Probably Broken Link for ['CAI24255', 'CAI24254', 'CAI24252'
+, 'CAI24253', 'AAF10911', 'AAF10777']
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████▌| 234899/235967 [3:49:32<01:21, 13.03it/s]
+Requested 1000 files, but only got 999 files.                                                  Probably Broken Link for ['AAD21204']
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████▋| 235375/235967 [3:50:30<00:46, 12.72it/s]
+Requested 1000 files, but only got 998 files.                                                  Probably Broken Link for ['CAX65048', 'CAB06040']
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 235967/235967 [3:50:55<00:00, 17.03it/s]
+Done
+(venv) [kisski-neptune] u26834@glogin9 remaped-uniprot-embl $  source /user/laurenz.kammeyer/u26834/.project/dir.project/trial-dna-diffusion/D3LM/venv/bin/
+(venv) [kisski-neptune] u26834@glogin9 remaped-uniprot-embl $
