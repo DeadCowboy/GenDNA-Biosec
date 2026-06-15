@@ -40,4 +40,4 @@ tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
 # for i, seq in enumerate(outputs.sequences):
 #     print(f">{i} {tokenizer.decode(seq, skip_special_tokens=True).replace(' ', '')}")
 
-print(f"Target: {tokenizer.pad_token_id}")
+print(f"Target: {tokenizer}")

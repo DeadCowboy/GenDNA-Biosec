@@ -27,7 +27,7 @@ class SwissProtDataset(Dataset):
         """
         assert mol_type in ["mRna", "genome"]
         assert masking_ratio >= 0 and masking_ratio <= 1, ValueError("Masking ratio must be between 0 and 1")
-        self.dir_path = os.path.join("/user", "laurenz.kammeyer", "u26834", "D3LM", dataset_dir, mol_type)
+        self.dir_path = os.path.join("/user", "laurenz.kammeyer", "u26834","GenDNA_Biosec" ,"D3LM", dataset_dir, mol_type)
         self.ids = [id for id in os.listdir(self.dir_path)]
         self.model_name = "Hengchang-Liu/D3LM-from-nt"
         self.tokenizer = AutoTokenizer.from_pretrained(self.model_name, trust_remote_code=True)
@@ -42,20 +42,27 @@ class SwissProtDataset(Dataset):
     def __len__(self):
         return len(self.ids)
 
-    def __getitem__(self, idx):
+    def __getitem__(self, idx: int) -> Tuple[torch.Tensor, Dict[str, Any]]:
         with open(os.path.join(self.dir_path, self.ids[idx]), "r") as itemFile:
             fileContents = itemFile.read()
             sequence = self.sequenceFromFile(fileContents)
             if self.transform:
                 sequence = self.transform(sequence)
             sequence = sequence.upper()  # Because the tokenizer only takes upper case nucleotides apparently
-            masked_seq, label_dict = self.maskSequenceAndTruncate(sequence)
-            out = self.tokenizer(masked_seq)  # {'input_ids': [3,...], 'attention_mask': [1111...111]}   # 3 is the cls token
+            out = self.tokenizer(sequence)  # {'input_ids': [3,...], 'attention_mask': [1111...111]}   # 3 is the cls token
             input_ids = out["input_ids"]
             attention_mask = out["attention_mask"]
-            input_ids = torch.tensor(input_ids)
+            trunc_input_ids = self.truncate(input_ids, self.max_length)
+
+            # Mask input ids directly
+            masked_input_ids, masked_indices = self.mask(trunc_input_ids, masking_ratio=self.masking_ratio, mask_token=self.mask_token_id)
+            masked_input_ids = torch.tensor(masked_input_ids)
             attention_mask = torch.tensor(attention_mask)
-            return input_ids, label_dict
+
+            label_dict = {"original_sequence": sequence,        "orig_input_ids":   out["input_ids"],
+                          "trunc_input_ids":   trunc_input_ids, "masked_input_ids": masked_input_ids,
+                          "masked_indices":    masked_indices}
+            return masked_input_ids, label_dict
 
     def collate_fn(self, batch):
         """
@@ -75,19 +82,25 @@ class SwissProtDataset(Dataset):
 
         padded_batch = pad_sequence(masked_ids, batch_first=True, padding_value=self.pad_token_id)
         return padded_batch, label_batch
+    
+    def truncate(self,sequence, length:int):
+        return sequence[:length]
 
-    def maskSequenceAndTruncate(self, sequence: str) -> Tuple[str, Dict[str, Any]]:
-        orig_bp = list(sequence)
-        if len(orig_bp) > self.max_length:  # Truncate if necessarry
-            orig_bp = orig_bp[: self.max_length]
-        masked_bp = orig_bp.copy()
-        random_indices = random.sample(range(len(orig_bp)), int(len(orig_bp) * self.masking_ratio))  # Sample without replacement
+    def mask(self, sequence, masking_ratio:float, mask_token):
+        # Replace proportion of indexes, chosen randomly, with the mask token
+
+        # Start from 1 to exclude the classification token as the first token
+        random_indices = random.sample(range(1,len(sequence)), int(len(sequence) * self.masking_ratio))  # Sample without replacement
+        masked_bp = sequence.copy()
         for idx in random_indices:
-            masked_bp[idx] = self.mask_token
-        masked_sequence = "".join(masked_bp)
-        return masked_sequence, {"original_sequence": sequence, "masked_indices": random_indices}
+            masked_bp[idx] = self.mask_token_id
+        if type(sequence) == str:
+            print("Was a string")
+            return "".join(masked_bp)
+        return masked_bp, random_indices
 
     def sequenceFromFile(self, itemFile: str):
+        # Extract the Basepair sequence from an embl file string
         lines = itemFile.splitlines()
         in_sequence = False
         sequence_parts = []
