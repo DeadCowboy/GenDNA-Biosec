@@ -1,10 +1,18 @@
-from dataset.EnzymeDataset import SwissProtDataset
+from D3LM.dataset.Protein.EnzymeDataset import SwissProtDataset
 import sys
+import os
 import torch
 from torch.utils.data import DataLoader, Subset
 from transformers import AutoTokenizer, AutoModelForMaskedLM
+import numpy as np
+import contextlib
+
+import Levenshtein
+
+from tqdm import tqdm
 
 import inspect
+
 # Ignore warnings
 import warnings
 
@@ -15,16 +23,9 @@ MAX_LENGTH = 600
 STEPS = 25
 TEMP = 1.0
 TOP_P = 0.9
-MASKING_RATIO = 0.5
+# MASKING_RATIO = 0.5
 
 SUBSET_SIZE = 100  # Number of training examples in the subset
-
-# Instanciate Dataset with Custom Masking transform
-dataset = SwissProtDataset(masking_ratio=MASKING_RATIO, max_length=MAX_LENGTH)
-
-# TODO: Remove for full run!
-indices = torch.randperm(len(dataset))[:SUBSET_SIZE].tolist()
-subset = Subset(dataset, indices)
 
 
 # Cuda
@@ -45,44 +46,57 @@ tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
 MDMGenerationConfig = getattr(sys.modules[type(model).__module__], "MDMGenerationConfig")
 
 
-config = MDMGenerationConfig(
-    mask_token_id=tokenizer.mask_token_id,
-    max_length=MAX_LENGTH,
-    steps=STEPS,
-    temperature=TEMP,
-    top_p=TOP_P,
-    alg="random",
-    num_return_sequences=1,
-    return_dict_in_generate=True,
-
-    pad_token_id = tokenizer.pad_token_id,
-    max_new_tokens = 0,
-
-)
+# print(inspect.getcallargs(MDMGenerationConfig.__init__, self=MDMGenerationConfig))
+# exit()
 
 # print(config.to_dict())
 # exit()
 
-def genConfigStr():
-    return f"Max Length: {MAX_LENGTH} \n STEPS: {STEPS} \n TEMP: {TEMP} \n TOP_P: {TOP_P}\n MASKING_RATIO: {MASKING_RATIO}\n SUBSET_SIZE: {SUBSET_SIZE}"
+res = []
+for MASKING_RATIO in tqdm(range(0, 10)):
+    MASKING_RATIO = MASKING_RATIO / 10
+    # Instanciate Dataset with Custom Masking transform
+    dataset = SwissProtDataset(masking_ratio=MASKING_RATIO, max_length=MAX_LENGTH)
 
+    # TODO: Remove for full run!
+    # indices = torch.randperm(len(dataset))[:SUBSET_SIZE].tolist()
+    # subset = Subset(dataset, indices)
 
-# Instanciate Dataloader
-dataloader = DataLoader(subset, shuffle=False, collate_fn=dataset.collate_fn)
+    config = MDMGenerationConfig(
+        mask_token_id=tokenizer.mask_token_id,
+        max_length=MAX_LENGTH,
+        steps=STEPS,
+        temperature=TEMP,
+        top_p=TOP_P,
+        alg="random",
+        num_return_sequences=1,
+        return_dict_in_generate=True,
+        pad_token_id=tokenizer.pad_token_id,
+        max_new_tokens=0,
+    )
 
+    def genConfigStr():
+        return f"Max Length: {MAX_LENGTH} \n STEPS: {STEPS} \n TEMP: {TEMP} \n TOP_P: {TOP_P}\n MASKING_RATIO: {MASKING_RATIO}\n SUBSET_SIZE: {SUBSET_SIZE}"
 
-lengths = []
-for sample, label_dict in dataloader:
-    with torch.no_grad():
-        input_ids = sample[0].to(device)
-        output = model.diffusion_generate(inputs=input_ids, generation_config=config)
-        out = output.sequences[0]
-        decoded = tokenizer.decode(out, skip_special_tokens=True).replace(' ', '')
-        # print(f"len decoded: {len(decoded)}    len text input: {len(label_dict[0]['trunc_input'])}")
-        lengths.append( len(decoded) - len(label_dict[0]['trunc_input']) )
+    # Instanciate Dataloader
+    dataloader = DataLoader(dataset, shuffle=False, collate_fn=dataset.collate_fn)
 
-print("Length differences: ")
-for i in range(20):
-    print(f"{i} : {lengths.count(i)}")
-        # gen_lengths.append(len(decoded))
-# print(f"Target Length: {MAX_LENGTH}     Generated ID Length:{len(out)}       Min Generated Text Length:{min(gen_lengths)}        Max Generated Text Length:{max(gen_lengths)}")
+    # print(f"\n \n MASKING_RATIO: { MASKING_RATIO}")
+    levenshtein_dist = []
+    for sample, label_dict in dataloader:
+        with torch.no_grad():
+            input_ids = sample[0].to(device)
+            sys.stdout = open(os.devnull, "w")  # Make the model shut up
+            output = model.diffusion_generate(inputs=input_ids, generation_config=config)
+            sys.stdout = sys.__stdout__
+            print("Confirm!")
+            out = output.sequences[0]
+            decoded = tokenizer.decode(out, skip_special_tokens=True).replace(" ", "")
+            # print(f"len decoded: {len(decoded)}    len text input: {len(label_dict[0]['trunc_input'])}")
+            levenshtein_dist.append(Levenshtein.distance(decoded, label_dict[0]["trunc_input"]))
+
+    # print(f"len orig: {len(label_dict[0]['trunc_input'])}    len generated: {len(decoded)}    len / leven: {MAX_LENGTH / np.average(levenshtein_dist)}")
+    # res.append([f"\n \n MASKING_RATIO: { MASKING_RATIO} \n   len orig: {len(label_dict[0]['trunc_input'])}    len generated: {len(decoded)}    len / leven: {MAX_LENGTH / np.average(levenshtein_dist)} \n {levenshtein_dist} \n \n" ])
+    res.append(levenshtein_dist)
+
+print(res)

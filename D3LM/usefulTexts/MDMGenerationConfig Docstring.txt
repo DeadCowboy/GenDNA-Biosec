@@ -1,0 +1,23 @@
+    Configuration for Masked Diffusion Model generation.
+
+    Args:
+        steps (`int`, defaults to 50):
+            Number of diffusion denoising steps. More steps generally yields higher quality.
+        alg (`str`, defaults to `"random"`):
+            Token unmasking order algorithm. One of:
+            - `"random"`: randomly select positions to unmask at each step.
+            - `"maskgit_plus"`: unmask positions with highest prediction confidence.
+            - `"entropy"`: unmask positions with lowest prediction entropy.
+            - `"topk_margin"`: unmask positions with highest top-1 vs top-2 probability margin.
+            - `"origin"`: stochastically unmask each position with probability proportional to schedule.
+            - `"p2"`: progressive prediction with remasking based on confidence.
+        temperature (`float`, defaults to 1.0):
+            Sampling temperature applied to the model logits. Higher values produce more diverse outputs.
+        top_p (`float`, defaults to 0.9):
+            Top-p (nucleus) sampling cutoff. Set to 1.0 to disable.
+        top_k (`int`, defaults to 0):
+            Top-k sampling cutoff. Set to 0 to disable.
+        alg_temp (`float`, defaults to 0.9):
+            Temperature for the confidence-based unmasking order (Gumbel-TopK). Set to 0 for deterministic order.
+        output_history (`bool`, defaults to `False`):
+            Whether to return the sequence state at each diffusion step.
