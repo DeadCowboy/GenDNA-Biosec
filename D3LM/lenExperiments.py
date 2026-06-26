@@ -1,4 +1,4 @@
-from D3LM.dataset.Protein.EnzymeDataset import SwissProtDataset
+from dataset.Protein.EnzymeDataset import SwissProtDataset
 import sys
 import os
 import torch

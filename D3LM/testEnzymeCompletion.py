@@ -1,4 +1,4 @@
-from dataset.EnzymeDataset import SwissProtDataset
+from dataset.Protein.EnzymeDataset import SwissProtDataset
 import sys
 import torch
 from torch.utils.data import DataLoader, Subset
@@ -57,6 +57,7 @@ config = MDMGenerationConfig(
 
 def genConfigStr():
     return f"Max Length: {MAX_LENGTH} \n STEPS: {STEPS} \n TEMP: {TEMP} \n TOP_P: {TOP_P}\n MASKING_RATIO: {MASKING_RATIO}\n SUBSET_SIZE: {SUBSET_SIZE}"
+
 
 def count_runs(text):
     if not text:

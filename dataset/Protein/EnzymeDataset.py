@@ -18,7 +18,7 @@ warnings.filterwarnings("ignore")
 
 class SwissProtDataset(Dataset):
 
-    def __init__(self, dataset_dir: str = "dataset/remaped-uniprot-embl/embl-files", mol_type: str = "mRna", masking_ratio: float = 0.4, max_length: int = 2048, transform=None):
+    def __init__(self, dataset_dir: str = "dataset/Protein/remaped-uniprot-embl/embl-files", mol_type: str = "mRna", masking_ratio: float = 0.4, max_length: int = 2048, transform=None):
         """
         Args:
             dataset_dir: Folder where the embl files are found. Should contain at least "mRna" and "genomic"
@@ -27,17 +27,17 @@ class SwissProtDataset(Dataset):
         """
         assert mol_type in ["mRna", "genome"]
         assert masking_ratio >= 0 and masking_ratio <= 1, ValueError("Masking ratio must be between 0 and 1")
-        self.dir_path = os.path.join("/user", "laurenz.kammeyer", "u26834","GenDNA_Biosec" ,"D3LM", dataset_dir, mol_type)
+        self.dir_path = os.path.join("/user", "laurenz.kammeyer", "u26834", "GenDNA_Biosec", "D3LM", dataset_dir, mol_type)
         self.ids = [id for id in os.listdir(self.dir_path)]
         self.model_name = "Hengchang-Liu/D3LM-from-nt"
         self.tokenizer = AutoTokenizer.from_pretrained(self.model_name, trust_remote_code=True)
         self.transform = transform
         self.masking_ratio = masking_ratio
         self.max_length = max_length
-        self.pad_token : str = self.tokenizer.pad_token
-        self.pad_token_id : int = self.tokenizer.pad_token_id
-        self.mask_token : str = self.tokenizer.mask_token
-        self.mask_token_id : int = self.tokenizer.mask_token_id
+        self.pad_token: str = self.tokenizer.pad_token
+        self.pad_token_id: int = self.tokenizer.pad_token_id
+        self.mask_token: str = self.tokenizer.mask_token
+        self.mask_token_id: int = self.tokenizer.mask_token_id
 
     def __len__(self):
         return len(self.ids)
@@ -69,11 +69,7 @@ class SwissProtDataset(Dataset):
 
             padded_input_ids = torch.stack((padded_input_ids, attention_mask))
 
-            label_dict = {"original_sequence": sequence,
-                          "orig_input_ids":   out["input_ids"],
-                          "trunc_input":   trunc_input_seq,
-                          "masked_input_ids": masked_input_ids,
-                          "masked_indices":    masked_indices}
+            label_dict = {"original_sequence": sequence, "orig_input_ids": out["input_ids"], "trunc_input": trunc_input_seq, "masked_input_ids": masked_input_ids, "masked_indices": masked_indices}
             return padded_input_ids, label_dict
 
     def collate_fn(self, batch):
@@ -94,15 +90,15 @@ class SwissProtDataset(Dataset):
 
         padded_batch = pad_sequence(masked_ids, batch_first=True, padding_value=self.pad_token_id)
         return padded_batch, label_batch
-    
-    def truncate(self,sequence, length:int):
+
+    def truncate(self, sequence, length: int):
         return sequence[:length]
 
-    def mask(self, sequence:List[str|int], masking_ratio:float, mask_token):
+    def mask(self, sequence: List[str | int], masking_ratio: float, mask_token):
         # Replace proportion of indexes, chosen randomly, with the mask token
 
         # Start from 1 to exclude the classification token as the first token
-        random_indices = random.sample(range(1,len(sequence)), int(len(sequence) * self.masking_ratio))  # Sample without replacement
+        random_indices = random.sample(range(1, len(sequence)), int(len(sequence) * self.masking_ratio))  # Sample without replacement
         masked_bp = sequence.copy()
         for idx in random_indices:
             masked_bp[idx] = self.mask_token_id
@@ -110,8 +106,8 @@ class SwissProtDataset(Dataset):
             print("Was a string")
             return "".join(masked_bp)
         return masked_bp, random_indices
-    
-    def pad(self, input_ids:List[str|int], length:int, pad_token : str|int = None): # type: ignore
+
+    def pad(self, input_ids: List[str | int], length: int, pad_token: str | int = None):  # type: ignore
         """
         Pad a sequence to length with pad_token. Default pad token is tokenizer.pad_token_id or tokenizer.pad_token if list of string is given
         """
@@ -121,7 +117,7 @@ class SwissProtDataset(Dataset):
             else:
                 pad_token = self.pad_token_id
 
-        if len(input_ids) > length: 
+        if len(input_ids) > length:
             print("Padding target length is shorter than sequence itself! Returning input sequence")
             return input_ids
 
@@ -129,12 +125,8 @@ class SwissProtDataset(Dataset):
             return input_ids
 
         pad_list = [pad_token] * length
-        pad_list[:len(input_ids)] = input_ids
+        pad_list[: len(input_ids)] = input_ids
         return pad_list
-
-        
-
-        
 
     def sequenceFromFile(self, itemFile: str):
         # Extract the Basepair sequence from an embl file string
