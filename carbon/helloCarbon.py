@@ -1,9 +1,9 @@
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoTokenizer, AutoConfig
 import torch
 
 repo = "HuggingFaceBio/Carbon-3B"
 
-tok = AutoTokenizer.from_pretrained(repo, trust_remote_code=True)
+# tok = AutoTokenizer.from_pretrained(repo, trust_remote_code=True)
 # model = AutoModelForCausalLM.from_pretrained(repo, dtype=torch.bfloat16).cuda().eval()
 
 # # Wrap a DNA prompt with the <dna> tag (the model is trained with this format).
@@ -19,4 +19,6 @@ tok = AutoTokenizer.from_pretrained(repo, trust_remote_code=True)
 # )
 # print(tok.decode(out[0][inputs.input_ids.shape[1] :], skip_special_tokens=True))
 
-print(tok.__dict__)
+conf = AutoConfig.from_pretrained(repo, trust_remote_code=True)
+
+print(conf.to_dict())
