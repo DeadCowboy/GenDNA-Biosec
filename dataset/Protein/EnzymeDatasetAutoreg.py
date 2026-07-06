@@ -161,7 +161,7 @@ class SwissProtDataset(Dataset):
     #     masked_indices = list(range(np.floor(len(sequence) * (1 - masking_ratio)), len(sequence)))
     #     return masked_sequence, masked_indices
 
-    def pad(self, input_ids: List[str | int], length: int, pad_token: str | int = None):  # type: ignore
+    def pad(self, input_ids: List[str | int], length: int, pad_token: str | int = None) -> List[str | int]:
         """
         Pad a sequence to length with pad_token. Default pad token is tokenizer.pad_token_id or tokenizer.pad_token if list of string is given
         """
