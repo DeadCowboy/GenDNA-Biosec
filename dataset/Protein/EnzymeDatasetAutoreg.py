@@ -25,7 +25,6 @@ class SwissProtDataset(Dataset):
         self,
         dataset_dir: str = "dataset/Protein/remaped-uniprot-embl/embl-files",
         mol_type: str = "mRna",
-        do_masking: bool = True,
         masking_ratio: float = 0.4,
         max_length: int = 2048,
         tokenizer: Union[AutoTokenizer, Literal["D3LM", "Carbon"]] = "Carbon",
@@ -48,7 +47,6 @@ class SwissProtDataset(Dataset):
             self.tokenizer = tokenizer
         else:
             self.tokenizer = AutoTokenizer.from_pretrained("HuggingFaceBio/Carbon-3B", trust_remote_code=True)
-        self.do_masking = do_masking
         self.masking_ratio = masking_ratio
         self.max_length = max_length
         self.length_multiple = length_multiple
@@ -91,11 +89,9 @@ class SwissProtDataset(Dataset):
 
             input_ids = out["input_ids"]
             attention_mask = out["attention_mask"]
-
-            if self.do_masking:
-                target_length = int(input_ids.numel() * (1 - self.masking_ratio))
-                input_ids = input_ids[:, :target_length]  # Masking Ratio of 1 should be full masking
-                attention_mask = attention_mask[:, :target_length]
+            target_length = int(input_ids.numel() * (1 - self.masking_ratio))
+            input_ids = input_ids[:, :target_length]  # Masking Ratio of 1 should be full masking
+            attention_mask = attention_mask[:, :target_length]
             label_dict = {"overlength_original_sequence": sequence, "fulllength_ids": out["input_ids"], "input_sequence": trunc_input_seq, "fulllength_attention_mask": out["attention_mask"]}
 
             return input_ids, attention_mask, label_dict
