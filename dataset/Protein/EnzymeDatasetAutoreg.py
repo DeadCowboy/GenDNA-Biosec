@@ -92,7 +92,13 @@ class SwissProtDataset(Dataset):
             target_length = int(input_ids.numel() * (1 - self.masking_ratio))
             input_ids = input_ids[:, :target_length]  # Masking Ratio of 1 should be full masking
             attention_mask = attention_mask[:, :target_length]
-            label_dict = {"overlength_original_sequence": sequence, "fulllength_ids": out["input_ids"], "input_sequence": trunc_input_seq, "fulllength_attention_mask": out["attention_mask"]}
+            label_dict = {
+                "overlength_original_sequence": sequence,
+                "fulllength_ids": out["input_ids"],
+                "input_sequence": trunc_input_seq,
+                "fulllength_attention_mask": out["attention_mask"],
+                "target_length": target_length,
+            }
 
             return input_ids, attention_mask, label_dict
 

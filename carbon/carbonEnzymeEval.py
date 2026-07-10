@@ -50,7 +50,7 @@ else:
 
 
 # Loading Dataset
-dataset = SwissProtDataset(masking_ratio=MASKING_RATIO, max_length=MAX_LENGTH, length_multiple=6, do_masking=True)  # Disable Masking with ratio 0
+dataset = SwissProtDataset(masking_ratio=MASKING_RATIO, max_length=MAX_LENGTH, length_multiple=6)  # Disable Masking with ratio 0
 
 indices = torch.randperm(len(dataset))[:SUBSET_SIZE].tolist()
 subset = Subset(dataset, indices)
@@ -71,7 +71,7 @@ for input_ids, attention_mask, label_dict in dataloader:
     out = model.generate(
         input_ids=input_ids,
         attention_mask=attention_mask,
-        max_new_tokens=64,
+        max_new_tokens=16,
         do_sample=False,
     )
     print("Label Dict")
@@ -80,5 +80,5 @@ for input_ids, attention_mask, label_dict in dataloader:
     print("\n \nDecode")
     print(tok.decode(out[0][input_ids.shape[1] :], skip_special_tokens=True))
 
-    print("Input Sequence")
-    print(label_dict[0]["input_sequence"])
+    print("Input Sequence After target length")
+    print(label_dict[0]["input_sequence"][label_dict[0]["target_length"] : label_dict[0]["target_length"] + 16 * 6])

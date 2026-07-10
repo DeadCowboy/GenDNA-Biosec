@@ -1,4 +1,4 @@
-from dataset.Protein.EnzymeDataset import SwissProtDataset
+from dataset.Protein.EnzymeDatasetDiffusion import SwissProtDataset
 import sys
 import torch
 from torch.utils.data import DataLoader, Subset
