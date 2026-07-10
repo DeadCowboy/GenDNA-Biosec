@@ -21,7 +21,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 
-MAX_LENGTH = 600
+SEQ_LENGTH = 600
 STEPS = 25
 TEMP = 1.0
 TOP_P = 0.9
@@ -54,8 +54,29 @@ else:
 
 
 # Loading Dataset
-dataset = SwissProtDataset(masking_ratio=MASKING_RATIO, max_length=MAX_LENGTH, length_multiple=6)  # Disable Masking with ratio 0
+dataset = SwissProtDataset(masking_ratio=MASKING_RATIO, seq_length=SEQ_LENGTH, length_multiple=6)  # Disable Masking with ratio 0
 
 indices = torch.randperm(len(dataset))[:SUBSET_SIZE].tolist()
 subset = Subset(dataset, indices)
 dataloader = DataLoader(subset, shuffle=False, collate_fn=dataset.collate_fn)
+
+
+for input_ids, attention_mask, label_dict in dataloader:
+    # Confirm dataset masks correctly
+    # print(tok.decode(input_ids[0], skip_special_tokens=True))
+
+    # print("Input")
+    # print(label_dict[0]["input_sequence"][: len(label_dict[0]["input_sequence"]) // 2])
+
+    new_tokens = len(label_dict[0]["input_sequence"]) // 6 - input_ids.numel()
+
+    # Are these real params? temperature=TEMP, top_p=TOP_P, do_sample=True, return_dict_in_generate=True, output_scores=True
+    out = model.generate(input_ids=input_ids, attention_mask=attention_mask, max_new_tokens=new_tokens)
+    out_seq = tok.decode(out[0][input_ids.numel() - 1 :], skip_special_tokens=True)  # Have some overlap so you can see the sequences are infact correctly alignt
+    compare_input_seq = label_dict[0]["input_sequence"][(input_ids.numel() - 2) * 6 :]
+
+    print("Input: ", compare_input_seq)
+    print("\n \n \n")
+    print("Generated: ", out_seq)
+    print("\n")
+    print(f"Distance: {Levenshtein.distance(compare_input_seq, out_seq)}")

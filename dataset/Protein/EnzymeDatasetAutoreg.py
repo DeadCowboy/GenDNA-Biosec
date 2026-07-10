@@ -26,7 +26,7 @@ class SwissProtDataset(Dataset):
         dataset_dir: str = "dataset/Protein/remaped-uniprot-embl/embl-files",
         mol_type: str = "mRna",
         masking_ratio: float = 0.4,
-        max_length: int = 2048,
+        seq_length: int = 2048,
         tokenizer: Union[AutoTokenizer, Literal["D3LM", "Carbon"]] = "Carbon",
         length_multiple: int = 6,
         transform=None,
@@ -48,7 +48,7 @@ class SwissProtDataset(Dataset):
         else:
             self.tokenizer = AutoTokenizer.from_pretrained("HuggingFaceBio/Carbon-3B", trust_remote_code=True)
         self.masking_ratio = masking_ratio
-        self.max_length = max_length
+        self.seq_length = seq_length
         self.length_multiple = length_multiple
         self.transform = transform
         self.cuda_avail = torch.cuda.is_available()
@@ -74,7 +74,7 @@ class SwissProtDataset(Dataset):
             sequence = sequence.upper()  # Because the tokenizer only takes upper case nucleotides apparently
 
             # Truncate sequence, so it will for sure fit in the limited id length
-            trunc_input_seq = self.truncate(sequence, length=self.max_length)
+            trunc_input_seq = self.truncate(sequence, length=self.seq_length)
             trunc_input_seq = self.truncate(sequence, length=self.make_multiple_of(len(sequence), self.length_multiple))  # Constrain to be of length multiple of 6
             assert len(trunc_input_seq) % self.length_multiple == 0, ValueError(f"Truncated sequence length {len(trunc_input_seq)} is not a multiple of {self.length_multiple}")
 
