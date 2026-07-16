@@ -11,6 +11,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 import numpy as np
 import contextlib
 import Levenshtein
+from difflib import ndiff
 from tqdm import tqdm
 
 import inspect
@@ -72,11 +73,17 @@ for input_ids, attention_mask, label_dict in dataloader:
 
     # Are these real params? temperature=TEMP, top_p=TOP_P, do_sample=True, return_dict_in_generate=True, output_scores=True
     out = model.generate(input_ids=input_ids, attention_mask=attention_mask, max_new_tokens=new_tokens)
-    out_seq = tok.decode(out[0][input_ids.numel() - 1 :], skip_special_tokens=True)  # Have some overlap so you can see the sequences are infact correctly alignt
-    compare_input_seq = label_dict[0]["input_sequence"][(input_ids.numel() - 2) * 6 :]
+    out_seq = tok.decode(out[0], skip_special_tokens=True)  # Have some overlap so you can see the sequences are infact correctly alignt
+    compare_input_seq = label_dict[0]["input_sequence"]
 
-    print("Input: ", compare_input_seq)
-    print("\n \n \n")
-    print("Generated: ", out_seq)
-    print("\n")
-    print(f"Distance: {Levenshtein.distance(compare_input_seq, out_seq)}")
+    # [input_ids.numel() - 1 :]
+    # [(input_ids.numel() - 2) * 6 :]
+
+    # print("Input: ", compare_input_seq)
+    # print("\n \n \n")
+    # print("Generated: ", out_seq)
+
+    # for line in ndiff([out_seq], [compare_input_seq]):
+    #     print(line)
+    # print("\n")
+    print(f"Distance: {Levenshtein.distance(compare_input_seq[:input_ids.numel()], out_seq[:input_ids.numel()])}")
