@@ -3,8 +3,9 @@ from typing import Any
 import torch
 import re
 import random
+from pathlib import Path
 import numpy as np
-from torch.utils.data import Dataset, DataLoader
+from torch.utils.data import Dataset
 from torch.nn.utils.rnn import pad_sequence
 from transformers import AutoTokenizer
 
@@ -23,7 +24,6 @@ class SwissProtDataset(Dataset):
 
     def __init__(
         self,
-        dataset_dir: str = "dataset/Protein/remaped-uniprot-embl/embl-files",
         mol_type: str = "mRna",
         masking_ratio: float = 0.4,
         seq_length: int = 2048,
@@ -41,7 +41,8 @@ class SwissProtDataset(Dataset):
         """
         assert mol_type in ["mRna", "genome"]
         assert masking_ratio >= 0 and masking_ratio <= 1, ValueError("Masking ratio must be between 0 and 1")
-        self.dir_path = os.path.join("/user", "laurenz.kammeyer", "u26834", "GenDNA_Biosec", dataset_dir, mol_type)
+        dataset_dir = Path(__file__).resolve().parent / "embl-files"
+        self.dir_path = dataset_dir / mol_type
         self.ids = [id for id in os.listdir(self.dir_path)]
         if type(tokenizer) == AutoTokenizer:
             self.tokenizer = tokenizer
@@ -73,9 +74,13 @@ class SwissProtDataset(Dataset):
                 sequence = self.transform(sequence)
             sequence = sequence.upper()  # Because the tokenizer only takes upper case nucleotides apparently
 
+            # If sequence is too short, skip and use next sample
+            if len(sequence) < self.seq_length:
+                return self.__getitem__(idx + 1 if idx + 1 < len(self.ids) else random.randint(0, len(self.ids) - 1))
+
             # Truncate sequence, so it will for sure fit in the limited id length
             trunc_input_seq = self.truncate(sequence, length=self.seq_length)
-            trunc_input_seq = self.truncate(sequence, length=self.make_multiple_of(len(sequence), self.length_multiple))  # Constrain to be of length multiple of 6
+            trunc_input_seq = self.truncate(trunc_input_seq, length=self.make_multiple_of(len(trunc_input_seq), self.length_multiple))  # Constrain to be of length multiple of 6
             assert len(trunc_input_seq) % self.length_multiple == 0, ValueError(f"Truncated sequence length {len(trunc_input_seq)} is not a multiple of {self.length_multiple}")
 
             # Add DNA Prompt (just how the model was trained)

@@ -8,11 +8,13 @@ from torch.utils.data import DataLoader, Subset
 import torch.nn.functional as F
 
 from transformers import AutoTokenizer, AutoModelForCausalLM
+
 import numpy as np
 import contextlib
 import Levenshtein
 from difflib import ndiff
 from tqdm import tqdm
+import matplotlib.pyplot as plt
 
 import inspect
 
@@ -27,8 +29,10 @@ STEPS = 25
 TEMP = 1.0
 TOP_P = 0.9
 MASKING_RATIO = 0.5
+BATCH_SIZE = 128
 
-SUBSET_SIZE = 1  # Number of training examples in the subset
+SUBSET_SIZE = BATCH_SIZE * 50  # Number of training examples in the subset
+print(f"Sample size: {SUBSET_SIZE}")
 
 
 # Cuda
@@ -59,31 +63,69 @@ dataset = SwissProtDataset(masking_ratio=MASKING_RATIO, seq_length=SEQ_LENGTH, l
 
 indices = torch.randperm(len(dataset))[:SUBSET_SIZE].tolist()
 subset = Subset(dataset, indices)
-dataloader = DataLoader(subset, shuffle=False, collate_fn=dataset.collate_fn)
+dataloader = DataLoader(subset, shuffle=False, batch_size=BATCH_SIZE, collate_fn=dataset.collate_fn)
 
 
-for input_ids, attention_mask, label_dict in dataloader:
-    # Confirm dataset masks correctly
-    # print(tok.decode(input_ids[0], skip_special_tokens=True))
+distances_list = []
 
-    # print("Input")
-    # print(label_dict[0]["input_sequence"][: len(label_dict[0]["input_sequence"]) // 2])
 
-    new_tokens = len(label_dict[0]["input_sequence"]) // 6 - input_ids.numel() + 1
+def for_each_run(out, label_dict, input_ids):
+
+    new_tokens = len(label_dict["input_sequence"]) // 6 - input_ids.numel() + 1
 
     # Are these real params? temperature=TEMP, top_p=TOP_P, do_sample=True, return_dict_in_generate=True, output_scores=True
+    # out = model.generate(input_ids=input_ids, attention_mask=attention_mask, max_new_tokens=new_tokens)
+    out_seq = tok.decode(out, skip_special_tokens=True)  # Have some overlap so you can see the sequences are infact correctly alignt
+    compare_input_seq = label_dict["input_sequence"]
+
+    end_of_input = input_ids.numel() * 6 - 6
+
+    assert out_seq[:end_of_input] == compare_input_seq[:end_of_input], ValueError(
+        f"Generated sequence does not match input sequence up to the length of the input ids. \n Generated: {out_seq[:end_of_input]} \n Input: {compare_input_seq[:end_of_input]}"
+    )
+
+    generated_seq = out_seq[end_of_input:]
+    gt_seq = compare_input_seq[end_of_input:]
+    assert len(generated_seq) == len(gt_seq), ValueError(f"Generated sequence length {len(generated_seq)} does not match ground truth sequence length {len(gt_seq)}")
+
+    bin_size = 24
+    start = 0
+    end = bin_size
+    distances = []
+    while end < len(generated_seq):
+        gen_bin = generated_seq[start:end]
+        gt_bin = gt_seq[start:end]
+        distance = Levenshtein.distance(gen_bin, gt_bin)
+        distances.append(distance)
+        # print(f"Generated: {gen_bin} | Ground Truth: {gt_bin} | Distance: {distance}")
+        start += bin_size
+        end += bin_size
+
+    distances_list.append(distances)
+    # print(f"Distances: {distances}")
+    # print(f"Distance: {Levenshtein.distance(compare_input_seq, out_seq)}   Len generated: {len(out_seq)}    Len input: {len(compare_input_seq)}")
+
+
+for input_ids, attention_mask, label_dict in tqdm(dataloader):
+    new_tokens = len(label_dict[0]["input_sequence"]) // 6 - input_ids[0].numel() + 1
     out = model.generate(input_ids=input_ids, attention_mask=attention_mask, max_new_tokens=new_tokens)
-    out_seq = tok.decode(out[0], skip_special_tokens=True)  # Have some overlap so you can see the sequences are infact correctly alignt
-    compare_input_seq = label_dict[0]["input_sequence"]
+    for i in range(BATCH_SIZE):
+        for_each_run(out[i], label_dict[i], input_ids[i])
 
-    # [input_ids.numel() - 1 :]
-    # [(input_ids.numel() - 2) * 6 :] - 1
+print(distances_list)
+distances_array = np.array(distances_list)
 
-    print(f"Input:  {compare_input_seq[:input_ids.numel() * 6 - 1]} | {compare_input_seq[ input_ids.numel() * 6 - 1: ]}")
-    print("\n \n")
-    print(f"Generated: {out_seq[:input_ids.numel() * 6 - 1]} | {out_seq[ input_ids.numel() * 6 - 1 : ]}")
+# Plot code
 
-    # for line in ndiff([out_seq], [compare_input_seq]):
-    #     print(line)
-    # print("\n")
-    print(f"Distance: {Levenshtein.distance(compare_input_seq, out_seq)}   Len generated: {len(out_seq)}    Len input: {len(compare_input_seq)}")
+lower = np.percentile(distances_array, 25, axis=0)
+upper = np.percentile(distances_array, 75, axis=0)
+mean = distances_array.mean(axis=0)
+
+x = np.arange(distances_array.shape[1])
+plt.plot(x, mean, label="Mean")
+plt.fill_between(x, lower, upper, alpha=0.25, label="25–75%")
+plt.xlabel(f"Steps of {24} basepairs")
+plt.ylabel("Levenshtein Distance")
+plt.title(f"Generation Quality Over Time ({SUBSET_SIZE} samples, Masking Ratio: {MASKING_RATIO})")
+plt.legend()
+plt.show()
