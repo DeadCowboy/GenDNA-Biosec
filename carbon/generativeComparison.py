@@ -69,7 +69,7 @@ for input_ids, attention_mask, label_dict in dataloader:
     # print("Input")
     # print(label_dict[0]["input_sequence"][: len(label_dict[0]["input_sequence"]) // 2])
 
-    new_tokens = len(label_dict[0]["input_sequence"]) // 6 - input_ids.numel()
+    new_tokens = len(label_dict[0]["input_sequence"]) // 6 - input_ids.numel() + 1
 
     # Are these real params? temperature=TEMP, top_p=TOP_P, do_sample=True, return_dict_in_generate=True, output_scores=True
     out = model.generate(input_ids=input_ids, attention_mask=attention_mask, max_new_tokens=new_tokens)
@@ -77,13 +77,13 @@ for input_ids, attention_mask, label_dict in dataloader:
     compare_input_seq = label_dict[0]["input_sequence"]
 
     # [input_ids.numel() - 1 :]
-    # [(input_ids.numel() - 2) * 6 :]
+    # [(input_ids.numel() - 2) * 6 :] - 1
 
-    # print("Input: ", compare_input_seq)
-    # print("\n \n \n")
-    # print("Generated: ", out_seq)
+    print(f"Input:  {compare_input_seq[:input_ids.numel() * 6 - 1]} | {compare_input_seq[ input_ids.numel() * 6 - 1: ]}")
+    print("\n \n")
+    print(f"Generated: {out_seq[:input_ids.numel() * 6 - 1]} | {out_seq[ input_ids.numel() * 6 - 1 : ]}")
 
     # for line in ndiff([out_seq], [compare_input_seq]):
     #     print(line)
     # print("\n")
-    print(f"Distance: {Levenshtein.distance(compare_input_seq[:input_ids.numel()], out_seq[:input_ids.numel()])}")
+    print(f"Distance: {Levenshtein.distance(compare_input_seq, out_seq)}   Len generated: {len(out_seq)}    Len input: {len(compare_input_seq)}")
