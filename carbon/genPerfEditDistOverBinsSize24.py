@@ -1,3 +1,7 @@
+# The generated sequence is compared to the ground truth sequence in bins of 24 basepairs. The Levenshtein distance is calculated for each bin and stored in a list.
+# The mean and interquartile range of the distances are then plotted over time to visualize the generation quality of the model.
+
+
 from dataset.Protein.EnzymeDatasetAutoreg import SwissProtDataset
 
 import sys
@@ -24,14 +28,11 @@ import warnings
 warnings.filterwarnings("ignore")
 
 
-SEQ_LENGTH = 600
-STEPS = 25
-TEMP = 1.0
-TOP_P = 0.9
-MASKING_RATIO = 0.5
+SEQ_LENGTH = 2048
+MASKING_RATIO = 0.75
 BATCH_SIZE = 128
 
-SUBSET_SIZE = BATCH_SIZE * 50  # Number of training examples in the subset
+SUBSET_SIZE = BATCH_SIZE * 300  # Number of training examples in the subset
 print(f"Sample size: {SUBSET_SIZE}")
 
 
@@ -71,8 +72,6 @@ distances_list = []
 
 def for_each_run(out, label_dict, input_ids):
 
-    new_tokens = len(label_dict["input_sequence"]) // 6 - input_ids.numel() + 1
-
     # Are these real params? temperature=TEMP, top_p=TOP_P, do_sample=True, return_dict_in_generate=True, output_scores=True
     # out = model.generate(input_ids=input_ids, attention_mask=attention_mask, max_new_tokens=new_tokens)
     out_seq = tok.decode(out, skip_special_tokens=True)  # Have some overlap so you can see the sequences are infact correctly alignt
@@ -108,14 +107,15 @@ def for_each_run(out, label_dict, input_ids):
 
 for input_ids, attention_mask, label_dict in tqdm(dataloader):
     new_tokens = len(label_dict[0]["input_sequence"]) // 6 - input_ids[0].numel() + 1
-    out = model.generate(input_ids=input_ids, attention_mask=attention_mask, max_new_tokens=new_tokens)
+    out = model.generate(input_ids=input_ids, attention_mask=attention_mask, max_new_tokens=new_tokens, do_sample=False)
     for i in range(BATCH_SIZE):
         for_each_run(out[i], label_dict[i], input_ids[i])
 
 print(distances_list)
 distances_array = np.array(distances_list)
 
-# Plot code
+
+# Plot
 
 lower = np.percentile(distances_array, 25, axis=0)
 upper = np.percentile(distances_array, 75, axis=0)
@@ -129,3 +129,4 @@ plt.ylabel("Levenshtein Distance")
 plt.title(f"Generation Quality Over Time ({SUBSET_SIZE} samples, Masking Ratio: {MASKING_RATIO})")
 plt.legend()
 plt.show()
+# plt.savefig(f"/home/lkammeyer/Documents/Uni/Master_Thesis/output/carbon/GenComp_{SUBSET_SIZE}_{MASKING_RATIO}_24.png")

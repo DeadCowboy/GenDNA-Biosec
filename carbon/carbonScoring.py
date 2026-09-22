@@ -21,7 +21,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 
-MAX_LENGTH = 600
+SEQ_LENGTH = 600
 STEPS = 25
 TEMP = 1.0
 TOP_P = 0.9
@@ -54,7 +54,7 @@ else:
 
 
 # Loading Dataset
-dataset = SwissProtDataset(masking_ratio=MASKING_RATIO, max_length=MAX_LENGTH, length_multiple=6)  # Disable Masking with ratio 0
+dataset = SwissProtDataset(masking_ratio=MASKING_RATIO, seq_length=SEQ_LENGTH, length_multiple=6)  # Disable Masking with ratio 0
 
 indices = torch.randperm(len(dataset))[:SUBSET_SIZE].tolist()
 subset = Subset(dataset, indices)
