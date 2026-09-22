@@ -23,7 +23,7 @@ BIN_SIZE = 24
 TEMP = 1.0
 TOP_P = 0.9
 MASKING_RATIO = 0.5
-BATCH_SIZE = 200
+BATCH_SIZE = 150
 
 SUBSET_SIZE = BATCH_SIZE * 30  # Number of training examples in the subset
 
@@ -101,19 +101,19 @@ def run_ec_evaluation(ec_range):
             max_new_tokens=new_tokens,
             do_sample=False,
         )
-        for i in range(BATCH_SIZE):
+        for i in range(len(out)):
             for_each_run(out[i], label_dict[i], input_ids[i])
 
     # Plot
     distances_array = np.array(distances_list)
-    lower = np.percentile(distances_array, 25, axis=0)
-    upper = np.percentile(distances_array, 75, axis=0)
+    # lower = np.percentile(distances_array, 25, axis=0)
+    # upper = np.percentile(distances_array, 75, axis=0)
     mean = distances_array.mean(axis=0)
 
     x = np.arange(distances_array.shape[1])
     plt.figure(figsize=(10, 6))
     plt.plot(x, mean, label="Mean", linewidth=2)
-    plt.fill_between(x, lower, upper, alpha=0.25, label="25–75%")
+    # plt.fill_between(x, lower, upper, alpha=0.25, label="25–75%")
     plt.xlabel(f"Steps of {BIN_SIZE} basepairs")
     plt.ylabel("Levenshtein Distance")
     plt.title(f"Generation Quality Over Time ({true_dataset_size} samples, Masking Ratio: {MASKING_RATIO}, EC Range: {ec_range})")
