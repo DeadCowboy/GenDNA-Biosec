@@ -17,7 +17,6 @@ import warnings
 
 warnings.filterwarnings("ignore")
 
-
 MAX_LENGTH = 1500
 BIN_SIZE = 24
 TEMP = 1.0
@@ -26,7 +25,6 @@ MASKING_RATIO = 0.5
 BATCH_SIZE = 150
 
 SUBSET_SIZE = BATCH_SIZE * 30  # Number of training examples in the subset
-
 
 # Cuda
 cuda_available = torch.cuda.is_available()
@@ -37,7 +35,6 @@ if cuda_available:
     device = torch.device("cuda")
 else:
     device = torch.device("cpu")
-
 
 # Loading Model components
 print("Initializing model and tokenizer...")
@@ -104,42 +101,45 @@ def run_ec_evaluation(ec_range):
         for i in range(len(out)):
             for_each_run(out[i], label_dict[i], input_ids[i])
 
-    # Plot
+    # Return the distances array instead of plotting
     distances_array = np.array(distances_list)
-    # lower = np.percentile(distances_array, 25, axis=0)
-    # upper = np.percentile(distances_array, 75, axis=0)
     mean = distances_array.mean(axis=0)
-
-    x = np.arange(distances_array.shape[1])
-    plt.figure(figsize=(10, 6))
-    plt.plot(x, mean, label="Mean", linewidth=2)
-    # plt.fill_between(x, lower, upper, alpha=0.25, label="25–75%")
-    plt.xlabel(f"Steps of {BIN_SIZE} basepairs")
-    plt.ylabel("Levenshtein Distance")
-    plt.title(f"Generation Quality Over Time ({true_dataset_size} samples, Masking Ratio: {MASKING_RATIO}, EC Range: {ec_range})")
-    plt.legend()
-
-    # Save the figure
-    output_dir = "/home/lkammeyer/Desktop/Master_Thesis_link/GenDNA-Biosec/carbon/EC_evaluation_figures"
-    os.makedirs(output_dir, exist_ok=True)
-    filename = f"ec_range_{ec_range}.png"
-    filepath = os.path.join(output_dir, filename)
-    plt.savefig(filepath, dpi=300, bbox_inches="tight")
-    plt.close()
-
-    print(f"Figure saved to {filepath}")
-    return filepath
+    return mean, true_dataset_size
 
 
-# Run evaluation for EC ranges 1-7
+# Run evaluation for EC ranges 1-7 and collect all data
 ec_ranges = ["1", "2", "3", "4", "5", "6", "7"]
-saved_files = []
+all_means = []
+all_sizes = []
 
 for ec_range in ec_ranges:
-    saved_file = run_ec_evaluation(ec_range)
-    saved_files.append(saved_file)
+    mean, true_dataset_size = run_ec_evaluation(ec_range)
+    all_means.append(mean)
+    all_sizes.append(true_dataset_size)
 
-print("\nAll evaluations completed!")
-print("Saved files:")
-for f in saved_files:
-    print(f"  - {f}")
+# Create a single plot with all lines
+plt.figure(figsize=(12, 8))
+x = np.arange(all_means[0].shape[0])
+
+for i, ec_range in enumerate(ec_ranges):
+    plt.plot(x, all_means[i], label=f"EC {ec_range} (n={all_sizes[i]})", linewidth=2)
+
+# Uncomment the following lines if you want to add uncertainty bins
+# lower = np.percentile(distances_array, 25, axis=0)
+# upper = np.percentile(distances_array, 75, axis=0)
+# plt.fill_between(x, lower, upper, alpha=0.25, label="25-75%")
+
+plt.xlabel(f"Steps of {BIN_SIZE} basepairs")
+plt.ylabel("Levenshtein Distance")
+plt.title(f"Generation Quality Over Time by EC Range (Masking Ratio: {MASKING_RATIO}), n={SUBSET_SIZE} samples per EC range")
+plt.legend()
+
+# Save the figure
+output_dir = "/home/lkammeyer/Desktop/Master_Thesis_link/GenDNA-Biosec/carbon/EC_evaluation_figures"
+os.makedirs(output_dir, exist_ok=True)
+filename = f"all_ec_ranges_combined.png"
+filepath = os.path.join(output_dir, filename)
+plt.savefig(filepath, dpi=300, bbox_inches="tight")
+plt.close()
+
+print(f"\nAll evaluations completed! Combined figure saved to {filepath}")
