@@ -3,10 +3,10 @@ import json
 from pathlib import Path
 import os
 
-with open(Path("dataset/Protein/swissprotToJson/swissProtEnzyme.json"), "r") as f:
+with open(Path("dataset/Enzyme/swissprotToJson/swissProtEnzyme.json"), "r") as f:
     swissProtData = json.load(f)
 
-with open(Path("dataset/Protein/remaped-uniprot-embl/combined-remap.json"), "r") as f:
+with open(Path("dataset/Enzyme/remaped-uniprot-embl/combined-remap.json"), "r") as f:
     toEmbl = json.load(f)
 
 # Create a mapping from SwissProt IDs to EC numbers

@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-DEFAULT_INPUT = Path("/home/lkammeyer/Documents/Uni/Master_Thesis/GenDNA-Biosec/carbon/dataset/Protein/swissprotToJson/swissProtEnzyme.json")
+DEFAULT_INPUT = Path("/home/lkammeyer/Documents/Uni/Master_Thesis/GenDNA-Biosec/carbon/dataset/Enzyme/swissprotToJson/swissProtEnzyme.json")
 
 
 def load_swissprot_enzyme(file_path=DEFAULT_INPUT):
