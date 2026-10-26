@@ -3,7 +3,7 @@
 # The mean and interquartile range of the distances are then plotted over time to visualize the generation quality of the model.
 
 
-from dataset.Protein.EnzymeDatasetAutoreg import SwissProtDataset
+from dataset.Enzyme.EnzymeDatasetAutoreg import SwissProtDataset
 
 import sys
 import os
@@ -107,7 +107,7 @@ def for_each_run(out, label_dict, input_ids):
 
 
 for input_ids, attention_mask, label_dict in tqdm(dataloader):
-    new_tokens = len(label_dict[0]["input_sequence"]) // 6 - input_ids[0].numel() + 1
+    new_tokens: int = len(label_dict[0]["input_sequence"]) // 6 - input_ids[0].numel() + 1
     out = model.generate(input_ids=input_ids, attention_mask=attention_mask, max_new_tokens=new_tokens, do_sample=False)
     for i in range(BATCH_SIZE):
         for_each_run(out[i], label_dict[i], input_ids[i])

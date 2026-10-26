@@ -51,23 +51,22 @@ class SwissProtDataset(Dataset):
         self.dir_path = dataset_dir / mol_type
         self.ids = [id for id in os.listdir(self.dir_path)]
 
-        if ec_range:
-            # Filter ids based on EC range
-            try:
-                with open(ec_table_path, "r") as f:
-                    self.ec_table: Dict[str, str] = json.load(f)
-            except FileNotFoundError:
-                raise FileNotFoundError(f"EC table file not found at {ec_table_path}. EC number lookups will return None.")
+        # Filter ids based on EC range
+        try:
+            with open(ec_table_path, "r") as f:
+                self.ec_table: Dict[str, str] = json.load(f)
+        except FileNotFoundError:
+            raise FileNotFoundError(f"EC table file not found at {ec_table_path}. EC number lookups will return None.")
 
-            filtered_ids = []
-            for id in self.ids:
-                with open(os.path.join(self.dir_path, id), "r") as itemFile:
-                    fileContents = "".join(itemFile.readlines()[:3])
-                    embl_id = self.get_embl_from_file(fileContents)
-                    ec_number = self.get_ec_number(embl_id)
-                    if ec_number and ec_number.startswith(ec_range):
-                        filtered_ids.append(id)
-            self.ids = filtered_ids
+        filtered_ids = []
+        for id in self.ids:
+            with open(os.path.join(self.dir_path, id), "r") as itemFile:
+                fileContents = "".join(itemFile.readlines()[:3])
+                embl_id = self.get_embl_from_file(fileContents)
+                ec_number = self.get_ec_number(embl_id)
+                if ec_number and ec_number.startswith(ec_range):
+                    filtered_ids.append(id)
+        self.ids = filtered_ids
 
         if type(tokenizer) == AutoTokenizer:
             self.tokenizer = tokenizer
