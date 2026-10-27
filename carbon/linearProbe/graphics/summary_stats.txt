@@ -1,0 +1,18 @@
+Multi-layer Probe Experiment Summary
+========================================
+
+Model: HuggingFaceBio/Carbon-500M
+Sequence length: 500
+Sample size: 3000
+Total classes: 7
+Layers tested: [10, 12, 14, 16, 18, 20]
+
+Layer Results:
+  Layer 10: best test accuracy = 0.5850
+  Layer 12: best test accuracy = 0.6667
+  Layer 14: best test accuracy = 0.7200
+  Layer 16: best test accuracy = 0.7267
+  Layer 18: best test accuracy = 0.7617
+  Layer 20: best test accuracy = 0.7417
+
+Best performing layer: 18 with accuracy 0.7617
