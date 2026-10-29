@@ -108,7 +108,7 @@ dataloader = DataLoader(subset, shuffle=False, batch_size=BATCH_SIZE, collate_fn
 # ---------------------------------------------------------------------------
 # 1) Feature extraction: mean-pooled activations for every sequence
 # ---------------------------------------------------------------------------
-LAYERS_TO_TEST = list(range(10, 21, 2))
+LAYERS_TO_TEST = list(range(10, 26 + 1, 2))
 
 print("Extracting activations...")
 for layer_idx, layer in enumerate(LAYERS_TO_TEST):
@@ -256,7 +256,7 @@ for layer_idx, layer in enumerate(LAYERS_TO_TEST):
     axes[1].set_xlabel("Epoch")
     axes[1].legend()
     fig.tight_layout()
-    fig.savefig(graphics_dir / "probe_training_curves.png", dpi=150)
+    fig.savefig(graphics_dir / f"probe_training_curves_{layer}.png", dpi=150)
     print("Saved probe_training_curves.png")
 
     # Save test accuracy statistics for summary
