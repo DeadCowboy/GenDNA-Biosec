@@ -15,6 +15,7 @@ __pycache__/
 dataset/**
 /dataset/**
 !/dataset/*.py
+!/dataset/**/*.py
 
 **.embl    # Ignore Dataset DNA files
 **/embl-files/**
