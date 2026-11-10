@@ -37,8 +37,8 @@ graphics_dir = Path(__file__).parent / "graphics"
 
 
 SEQ_LENGTH = 500
-MASKING_RATIO = 0.1
-BATCH_SIZE = 30
+MASKING_RATIO = 0.0
+BATCH_SIZE = 200
 
 SUBSET_SIZE = BATCH_SIZE * 100  # Number of examples in the subset
 print(f"Sample size: {SUBSET_SIZE}")

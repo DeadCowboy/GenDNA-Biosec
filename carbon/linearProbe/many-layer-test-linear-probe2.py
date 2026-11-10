@@ -37,9 +37,9 @@ warnings.filterwarnings("ignore")
 
 SEQ_LENGTH = 500
 MASKING_RATIO = 0.1
-BATCH_SIZE = 30
+BATCH_SIZE = 10
 
-SUBSET_SIZE = BATCH_SIZE * 100  # Number of examples in the subset
+SUBSET_SIZE = BATCH_SIZE * 500  # Number of examples in the subset
 print(f"Sample size: {SUBSET_SIZE}")
 
 
@@ -61,7 +61,7 @@ np.random.seed(SEED)
 # It already exists, but makedirs(exist_ok=True) makes the script robust
 # against being run from a checkout where it is missing.
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-GRAPHICS_DIR = os.path.join(os.path.dirname(SCRIPT_DIR), "graphics2")
+GRAPHICS_DIR = os.path.join(os.path.dirname(SCRIPT_DIR), "graphics-BigRun")
 os.makedirs(GRAPHICS_DIR, exist_ok=True)
 print(f"Graphics folder: {GRAPHICS_DIR}")
 
@@ -79,8 +79,8 @@ else:
 
 # Loading Model components
 print("Initializing model and tokenizer...")
-# repo = "HuggingFaceBio/Carbon-3B"
-repo = "HuggingFaceBio/Carbon-500M"
+repo = "HuggingFaceBio/Carbon-3B"
+# repo = "HuggingFaceBio/Carbon-500M"
 tok = AutoTokenizer.from_pretrained(repo, trust_remote_code=True)
 
 try:  # preflight: is the architecture supported by this TransformerLens?
@@ -184,11 +184,6 @@ train_idx, test_idx = perm[:n_train], perm[n_train:]
 y_train, y_test = labels[train_idx], labels[test_idx]
 print(f"Train: {n_train}  Test: {n - n_train}")
 
-# Majority-class baseline, so the numbers below have context
-majority = torch.bincount(y_train).argmax().item()
-baseline_acc = (y_test == majority).float().mean().item()
-print(f"Majority-class baseline: {baseline_acc:.4f}")
-
 
 # ---------------------------------------------------------------------------
 # 4) Probe training helper
@@ -259,10 +254,9 @@ def save_training_curves(history, layer, path):
     axes[1].plot(history["test_acc"], label="test")
     axes[1].set_title(f"Accuracy (layer {layer})")
     axes[1].set_xlabel("Epoch")
-    axes[1].axhline(baseline_acc, color="grey", linestyle="--", linewidth=1, label="majority baseline")
     axes[1].legend()
     fig.tight_layout()
-    fig.savefig(path, dpi=150)
+    fig.savefig(path, dpi=300)
     plt.close(fig)
 
 
@@ -283,38 +277,24 @@ for L in PROBE_LAYERS:
     results[L] = (best_acc, probe, history, feat_mean, feat_std)
     print(f"Layer {L}: best test accuracy {best_acc:.4f}")
 
-    # Per-layer training curves
-    curves_path = os.path.join(GRAPHICS_DIR, f"probe_layer{L}_curves.png")
-    save_training_curves(history, L, curves_path)
-    print(f"Saved {curves_path}")
-
-    # Per-layer checkpoint
-    torch.save(
-        {
-            "state_dict": probe.state_dict(),
-            "classes": classes,
-            "feature_mean": feat_mean,
-            "feature_std": feat_std,
-            "layer": L,
-            "hook": hook,
-            "repo": repo,
-        },
-        f"linear_probe_layer{L}.pt",
-    )
-    print(f"Saved linear_probe_layer{L}.pt")
+    # Bit annoying over time
+    # # Per-layer training curves
+    # curves_path = os.path.join(GRAPHICS_DIR, f"probe_layer{L}_curves(len={SEQ_LENGTH}_size={SUBSET_SIZE}).png")
+    # save_training_curves(history, L, curves_path)
+    # print(f"Saved {curves_path}")
+    # print(f"Saved linear_probe_layer{L}.pt")
 
 
 # ---------------------------------------------------------------------------
 # 6) Summary graphic: best test accuracy per layer
 # ---------------------------------------------------------------------------
 best_layer = max(results, key=lambda L: results[L][0])
-summary_path = os.path.join(GRAPHICS_DIR, "accuracy_per_layer.png")
+summary_path = os.path.join(GRAPHICS_DIR, f"accuracy_per_layer_(len={SEQ_LENGTH}_size={SUBSET_SIZE}).png")
 
 fig, ax = plt.subplots(figsize=(8, 5))
 layers = PROBE_LAYERS
 accs = [results[L][0] for L in layers]
 ax.plot(layers, accs, marker="o", linewidth=2)
-ax.axhline(baseline_acc, color="grey", linestyle="--", linewidth=1, label=f"majority baseline ({baseline_acc:.3f})")
 for L, acc in zip(layers, accs):
     ax.annotate(f"{acc:.3f}", (L, acc), textcoords="offset points", xytext=(0, 8), ha="center", fontsize=9)
 ax.set_xlabel("Layer")
@@ -323,7 +303,7 @@ ax.set_title(f"Linear probe: best test accuracy per layer (best: layer {best_lay
 ax.set_xticks(layers)
 ax.legend()
 fig.tight_layout()
-fig.savefig(summary_path, dpi=150)
+fig.savefig(summary_path, dpi=300)
 plt.close(fig)
 print(f"\nSaved summary graphic {summary_path}")
 print(f"Best layer: {best_layer} (best test accuracy {results[best_layer][0]:.4f})")

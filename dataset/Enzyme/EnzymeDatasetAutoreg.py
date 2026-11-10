@@ -49,7 +49,7 @@ class SwissProtDataset(Dataset):
         assert masking_ratio >= 0 and masking_ratio <= 1, ValueError("Masking ratio must be between 0 and 1")
         dataset_dir = Path(__file__).resolve().parent / "embl-files"
         self.dir_path = dataset_dir / mol_type
-        self.ids = [id for id in os.listdir(self.dir_path)]
+        self.ids = [id for id in os.listdir(self.dir_path) if not os.path.isdir(os.path.join(self.dir_path, id))]
 
         # Filter ids based on EC range
         try:
