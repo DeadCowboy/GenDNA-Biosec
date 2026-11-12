@@ -37,7 +37,7 @@ warnings.filterwarnings("ignore")
 
 SEQ_LENGTH = 500
 MASKING_RATIO = 0.1
-BATCH_SIZE = 10
+BATCH_SIZE = 20
 
 SUBSET_SIZE = BATCH_SIZE * 500  # Number of examples in the subset
 print(f"Sample size: {SUBSET_SIZE}")
@@ -45,7 +45,7 @@ print(f"Sample size: {SUBSET_SIZE}")
 
 # Params for Probe
 hook = "hook_out"  # Hook to probe
-PROBE_LAYERS = list(range(10, 26 + 1, 2))  # [10, 12, 14, 16, 18, 20]
+PROBE_LAYERS = list(range(8, 28 + 1, 2))  # [10, 12, 14, 16, 18, 20]
 
 # Linear-probe hyperparameters
 TRAIN_FRACTION = 0.8  # fraction of examples used for training
@@ -79,8 +79,8 @@ else:
 
 # Loading Model components
 print("Initializing model and tokenizer...")
-repo = "HuggingFaceBio/Carbon-3B"
-# repo = "HuggingFaceBio/Carbon-500M"
+# repo = "HuggingFaceBio/Carbon-3B"
+repo = "HuggingFaceBio/Carbon-500M"
 tok = AutoTokenizer.from_pretrained(repo, trust_remote_code=True)
 
 try:  # preflight: is the architecture supported by this TransformerLens?
@@ -289,7 +289,7 @@ for L in PROBE_LAYERS:
 # 6) Summary graphic: best test accuracy per layer
 # ---------------------------------------------------------------------------
 best_layer = max(results, key=lambda L: results[L][0])
-summary_path = os.path.join(GRAPHICS_DIR, f"accuracy_per_layer_(len={SEQ_LENGTH}_size={SUBSET_SIZE}).png")
+summary_path = os.path.join(GRAPHICS_DIR, f"accuracy_per_layer_multilayer_probe(len={SEQ_LENGTH}_size={SUBSET_SIZE}).png")
 
 fig, ax = plt.subplots(figsize=(8, 5))
 layers = PROBE_LAYERS

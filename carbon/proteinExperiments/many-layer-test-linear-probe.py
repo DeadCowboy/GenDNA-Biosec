@@ -2,9 +2,7 @@
 # Flow: extract mean-pooled activations -> encode labels -> train/test split
 #       -> train a linear probe -> evaluate and save
 
-from dataset.Enzyme.EnzymeDatasetAutoreg import SwissProtDataset
-from dataset.Protein.ProteinDatasetAutoreg import ProteinDataset
-
+from dataset.Enzyme.ProteinDatasetAutoreg import ProteinDataset
 
 import sys
 import os
@@ -177,7 +175,6 @@ for layer_idx, layer in enumerate(LAYERS_TO_TEST):
     std = X_train.std(dim=0, keepdim=True).clamp_min(1e-6)
     X_train = (X_train - mean) / std
     X_test = (X_test - mean) / std
-
     # ---------------------------------------------------------------------------
     # 5) Train the linear probe
     # ---------------------------------------------------------------------------

@@ -1,0 +1,22 @@
+Multi-layer Probe Experiment Summary (Enzyme vs. Protein)
+========================================
+
+Model: HuggingFaceBio/Carbon-500M
+Sequence length: 500
+Sample size: 3000 per dataset (6000 total)
+Task: binary classification of dataset origin (enzyme vs. protein)
+Total classes: 2
+Layers tested: [10, 12, 14, 16, 18, 20, 22, 24, 26]
+
+Layer Results:
+  Layer 10: best test accuracy = 0.8117
+  Layer 12: best test accuracy = 0.8567
+  Layer 14: best test accuracy = 0.8775
+  Layer 16: best test accuracy = 0.8658
+  Layer 18: best test accuracy = 0.8900
+  Layer 20: best test accuracy = 0.8742
+  Layer 22: best test accuracy = 0.8667
+  Layer 24: best test accuracy = 0.8658
+  Layer 26: best test accuracy = 0.8383
+
+Best performing layer: 18 with accuracy 0.8900
